@@ -3,64 +3,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: Arial, sans-serif;
+  color: #374151;
   background-color: #ffffff;
-  color: #1f2937;
   line-height: 1.6;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 img {
   max-width: 100%;
   display: block;
 }
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-:root {
-  --primary-color: #0b6e8e;
-  --secondary-color: #18a6a6;
-  --dark-color: #16324f;
-  --text-color: #374151;
-  --light-bg: #f5f9fb;
-  --white: #ffffff;
-  --border-color: #e5e7eb;
-}
-/* =========================
-   TOP BAR
-========================= */
-
 .top-bar {
-  background-color: var(--dark-color);
-  color: var(--white);
+  background-color: #16324f;
+  color: #ffffff;
   font-size: 14px;
   padding: 8px 0;
 }
-
-/* =========================
-   NAVBAR
-========================= */
-
 .navbar {
   min-height: 80px;
 }
-
 .navbar-brand {
-  color: var(--primary-color) !important;
-  letter-spacing: -0.5px;
+  color: #0b6e8e !important;
+  font-weight: 700;
 }
 
 .navbar-nav {
@@ -68,34 +42,29 @@ textarea {
 }
 
 .nav-link {
-  color: var(--text-color);
+  color: #374151;
   font-weight: 500;
   padding: 10px 12px !important;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: var(--primary-color);
+  color: #0b6e8e;
 }
 
 .nav-link.active {
-  color: var(--primary-color) !important;
+  color: #0b6e8e !important;
 }
-
-/* =========================
-   NAVBAR BUTTON
-========================= */
-
 .navbar .btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  background-color: #0b6e8e;
+  border-color: #0b6e8e;
   border-radius: 8px;
   font-weight: 600;
   padding: 10px 20px;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .navbar .btn-primary:hover {
-  background-color: var(--dark-color);
-  border-color: var(--dark-color);
+  background-color: #16324f;
+  border-color: #16324f;
 }
