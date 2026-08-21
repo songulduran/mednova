@@ -558,3 +558,149 @@ img {
   margin: 0;
   font-size: 14px;
 }
+/* =========================
+   SAYFA BAŞLIĞI
+========================= */
+
+.page-header {
+  padding: 80px 0;
+  background-color: #f5f9fb;
+  text-align: center;
+}
+
+.page-header span {
+  display: block;
+  color: #0b6e8e;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.page-header h1 {
+  margin: 10px 0;
+  color: #16324f;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.page-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 17px;
+}
+/* =========================
+   HAKKIMIZDA İÇERİK
+========================= */
+
+.about-section {
+  padding: 90px 0;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.section-label {
+  display: block;
+  color: #0b6e8e;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.about-section h2 {
+  color: #16324f;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  color: #6b7280;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+/* =========================
+   DEĞERLERİMİZ
+========================= */
+
+.about-values {
+  padding: 90px 0;
+  background-color: #f5f9fb;
+}
+
+.about-values h2 {
+  color: #16324f;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-values .text-center p {
+  color: #6b7280;
+}
+
+.value-card {
+  height: 100%;
+  padding: 35px 30px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+}
+
+.value-card i {
+  font-size: 42px;
+  color: #0b6e8e;
+}
+
+.value-card h4 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  color: #16324f;
+  font-weight: 700;
+}
+
+.value-card p {
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+/* =========================
+   HAKKIMIZDA CTA
+========================= */
+
+.about-cta {
+  padding: 70px 0;
+  background-color: #0b6e8e;
+  color: #ffffff;
+}
+
+.about-cta span {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.about-cta h2 {
+  margin-top: 10px;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.about-cta p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+}
+
+.about-cta .btn {
+  padding: 12px 30px;
+}
