@@ -202,3 +202,359 @@ img {
 .quick-card a:hover {
   color: #16324f;
 }
+/* doktorlar */
+.doctors-section {
+  background-color: #f5f9fb;
+}
+
+.section-title span {
+  color: #0b6e8e;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.section-title h2 {
+  color: #16324f;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.section-title p {
+  color: #6b7280;
+  max-width: 600px;
+  margin: 15px auto 0;
+}
+
+/* DOKTOR KARTI */
+
+.doctor-card {
+  background-color: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.doctor-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.doctor-card-body {
+  padding: 25px;
+}
+
+.doctor-card-body span {
+  display: inline-block;
+  background-color: #e0f2f5;
+  color: #0b6e8e;
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.doctor-card-body h5 {
+  color: #16324f;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.doctor-card-body p {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.doctor-card-body a {
+  color: #0b6e8e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.doctor-card-body a:hover {
+  color: #16324f;
+}
+
+/* TÜM DOKTORLAR BUTONU */
+
+.doctors-button {
+  background-color: #0b6e8e;
+  border-color: #0b6e8e;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.doctors-button:hover {
+  background-color: #16324f;
+  border-color: #16324f;
+}
+/* bölümler */
+
+.departments-section {
+  background-color: #ffffff;
+}
+
+.department-card {
+  display: block;
+  height: 100%;
+  padding: 30px 20px;
+  background-color: #f5f9fb;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.department-card > i {
+  font-size: 42px;
+  color: #0b6e8e;
+}
+
+.department-card h5 {
+  color: #16324f;
+  margin-top: 18px;
+  font-weight: 700;
+}
+
+.department-card span {
+  color: #0b6e8e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.department-card span i {
+  margin-left: 5px;
+}
+
+.department-card:hover {
+  transform: translateY(-6px);
+  background-color: #eaf5f7;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.departments-button {
+  background-color: #0b6e8e;
+  border-color: #0b6e8e;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.departments-button:hover {
+  background-color: #16324f;
+  border-color: #16324f;
+}
+/* =========================
+   SAĞLIK PAKETLERİ
+========================= */
+
+.packages-section {
+  background-color: #f5f9fb;
+}
+
+.package-card {
+  height: 100%;
+  padding: 35px 30px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  transition: 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.package-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0f2f5;
+  border-radius: 14px;
+}
+
+.package-icon i {
+  font-size: 30px;
+  color: #0b6e8e;
+}
+
+.package-card h4 {
+  color: #16324f;
+  margin-top: 25px;
+  font-weight: 700;
+}
+
+.package-card p {
+  color: #6b7280;
+  line-height: 1.7;
+  margin: 15px 0 20px;
+}
+
+.package-card a {
+  color: #0b6e8e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.package-card a:hover {
+  color: #16324f;
+}
+/* =========================
+   SSS
+========================= */
+
+.faq-section {
+  background-color: #ffffff;
+}
+
+.faq-section .accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-section .accordion-item {
+  border: 1px solid #e5e7eb;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-section .accordion-button {
+  color: #16324f;
+  font-weight: 600;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  color: #0b6e8e;
+  background-color: #f5f9fb;
+}
+
+.faq-section .accordion-button:focus {
+  box-shadow: none;
+}
+
+.faq-section .accordion-body {
+  color: #6b7280;
+  line-height: 1.7;
+  padding: 20px;
+}
+/* =========================
+   CTA
+========================= */
+
+.cta-section {
+  padding: 70px 0;
+  background-color: #0b6e8e;
+}
+
+.cta-section h2 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 28px;
+  background-color: #ffffff;
+  color: #0b6e8e;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #16324f;
+  color: #ffffff;
+}
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+  padding: 60px 0 25px;
+  background-color: #16324f;
+  color: #ffffff;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.site-footer p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+}
+
+.site-footer h6 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer ul li {
+  margin-bottom: 10px;
+}
+
+.site-footer ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.site-footer ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-contact {
+  margin-bottom: 10px;
+}
+
+.footer-contact i {
+  width: 25px;
+  color: #ffffff;
+}
+
+.site-footer hr {
+  margin: 40px 0 20px;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
