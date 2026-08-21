@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>MEDNOVA HASTANESİ</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Kendi CSS dosyamız -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <div class="container-fluid py-2 border-bottom d-none d-lg-block">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-center text-lg-start">
+        <i class="bi bi-telephone me-2"></i>
+        <span>7/24 Çağrı Merkezi: 444 00 00</span>
+      </div>
+
+      <div class="col-lg-6 text-center text-lg-end mt-2 mt-lg-0">
+        <i class="bi bi-envelope me-2"></i>
+        <span>- Acil Servis - Hasta Hakları - EN</span>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary fs-3" href="index.html">
+          MEDNOVA HASTANESİ
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Menüyü Aç"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"> Ana Sayfa </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="hakkimizda.html"> Hakkımızda </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="doktorlar.html"> Doktorlarımız </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="bolumler.html"> Bölümler </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="subeler.html"> Sağlık Paketleri </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="subeler.html"> Hastanelerimiz </a>
+            </li>
+          </ul>
+              <a class="nav-link" href="iletisim.html">İletişim </a>
+            </li>
+
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a href="randevu.html" class="btn btn-primary px-4">
+                <i class="bi bi-calendar-check me-2"></i>
+                Randevu Al
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-75">
+          <div class="col-lg-6">
+            <span class="badge bg-primary-subtle text-primary px-3 py-2 mb-3">
+              Sağlığınız İçin Buradayız
+            </span>
+
+            <h1 class="display-4 fw-bold text-dark">
+              Sağlığınız,
+              <span class="text-primary"> Güvenimizdir. </span>
+            </h1>
+
+            <p class="lead text-secondary mt-3">
+              Uzman doktorlarımız, modern teknolojimiz ve hasta odaklı
+              yaklaşımımız ile sağlığınız için yanınızdayız.
+            </p>
+
+            <div class="mt-4">
+              <a href="randevu.html" class="btn btn-primary btn-lg me-2 px-4">
+                Randevu Al
+              </a>
+
+              <a
+                href="doktorlar.html"
+                class="btn btn-outline-primary btn-lg px-4"
+              >Doktor Bul
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <img
+              src="images/hero.jpg"
+              alt="Mednova Hastanesi"
+              class="img-fluid rounded-4 shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HIZLI ERİŞİM ================= -->
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card quick-card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <i class="bi bi-person-badge fs-1 text-primary"></i>
+
+                <h5 class="fw-bold mt-3">Doktor Bul</h5>
+
+                <p class="text-secondary">
+                  Alanında uzman doktorlarımızı keşfedin.
+                </p>
+
+                <a
+                  href="doktorlar.html"
+                  class="text-primary text-decoration-none"
+                >
+                  İncele
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card quick-card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <i class="bi bi-hospital fs-1 text-primary"></i>
+
+                <h5 class="fw-bold mt-3">Randevu Al</h5>
+
+                <p class="text-secondary">
+                  Tüm uzmanlık alanlarımızı inceleyin.
+                </p>
+
+                <a
+                  href="bolumler.html"
+                  class="text-primary text-decoration-none"
+                >
+                  Bölümleri Gör
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card quick-card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <i class="bi bi-calendar2-check fs-1 text-primary"></i>
+
+                <h5 class="fw-bold mt-3">Tahlil Sonuçları</h5>
+
+                <p class="text-secondary">Size uygun tarih ve saati seçin.</p>
+
+                <a
+                  href="randevu.html"
+                  class="text-primary text-decoration-none"
+                >
+                  Randevu Al
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card quick-card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <i class="bi bi-geo-alt fs-1 text-primary"></i>
+
+                <h5 class="fw-bold mt-3">Hastane Bul</h5>
+
+                <p class="text-secondary">Size en yakın hastaneyi bulun.</p>
+
+                <a
+                  href="subeler.html"
+                  class="text-primary text-decoration-none"
+                >
+                  Hastaneleri Gör
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DOKTORLAR ================= -->
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="text-primary fw-semibold"> UZMAN KADROMUZ </span>
+
+          <h2 class="fw-bold mt-2">Öne Çıkan Doktorlarımız</h2>
+
+          <p class="text-secondary">
+            Alanında deneyimli uzman doktorlarımızla sağlığınız için
+            yanınızdayız.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Doktor 1 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card doctor-card border-0 shadow-sm">
+              <img
+                src="images/doctor-1.jpg"
+                class="card-img-top"
+                alt="Dr. Ahmet Yılmaz"
+              />
+
+              <div class="card-body p-4">
+                <span class="badge bg-primary-subtle text-primary">
+                  Kardiyoloji
+                </span>
+
+                <h5 class="fw-bold mt-3">Dr. Ahmet Yılmaz</h5>
+
+                <p class="text-secondary">Kardiyoloji Uzmanı</p>
+
+                <a href="doktor-detay.html" class="btn btn-outline-primary">
+                  Profili İncele
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doktor 2 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card doctor-card border-0 shadow-sm">
+              <img
+                src="images/doctor-2.jpg"
+                class="card-img-top"
+                alt="Dr. Elif Kaya"
+              />
+
+              <div class="card-body p-4">
+                <span class="badge bg-primary-subtle text-primary">
+                  Nöroloji
+                </span>
+
+                <h5 class="fw-bold mt-3">Dr. Elif Kaya</h5>
+
+                <p class="text-secondary">Nöroloji Uzmanı</p>
+
+                <a href="doktor-detay.html" class="btn btn-outline-primary">
+                  Profili İncele
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doktor 3 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card doctor-card border-0 shadow-sm">
+              <img
+                src="images/doctor-3.jpg"
+                class="card-img-top"
+                alt="Dr. Mehmet Demir"
+              />
+
+              <div class="card-body p-4">
+                <span class="badge bg-primary-subtle text-primary">
+                  Ortopedi
+                </span>
+
+                <h5 class="fw-bold mt-3">Dr. Mehmet Demir</h5>
+
+                <p class="text-secondary">Ortopedi Uzmanı</p>
+
+                <a href="doktor-detay.html" class="btn btn-outline-primary">
+                  Profili İncele
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="doktorlar.html" class="btn btn-primary px-4">
+            Tüm Doktorları Gör
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BÖLÜMLER ================= -->
+
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="text-primary fw-semibold"> SAĞLIK HİZMETLERİ </span>
+
+          <h2 class="fw-bold mt-2">Tıbbi Bölümlerimiz</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div class="department-card text-center p-4">
+              <i class="bi bi-heart-pulse fs-1 text-primary"></i>
+              <h6 class="fw-bold mt-3">Kardiyoloji</h6>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="department-card text-center p-4">
+              <i class="bi bi-brain fs-1 text-primary"></i>
+              <h6 class="fw-bold mt-3">Nöroloji</h6>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="department-card text-center p-4">
+              <i class="bi bi-eye fs-1 text-primary"></i>
+              <h6 class="fw-bold mt-3">Göz Hastalıkları</h6>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="department-card text-center p-4">
+              <i class="bi bi-people fs-1 text-primary"></i>
+              <h6 class="fw-bold mt-3">Çocuk Sağlığı</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SAĞLIK PAKETLERİ ================= -->
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="text-primary fw-semibold">
+            SAĞLIĞINIZI ÖNEMSİYORUZ
+          </span>
+
+          <h2 class="fw-bold mt-2">Sağlık Paketleri</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <i class="bi bi-clipboard2-pulse fs-1 text-primary"></i>
+
+                <h4 class="fw-bold mt-3">Genel Check-Up</h4>
+
+                <p class="text-secondary">
+                  Genel sağlık kontrollerinizi kapsamlı şekilde gerçekleştirin.
+                </p>
+
+                <a href="saglik-paketleri.html" class="btn btn-outline-primary">
+                  Detaylı İncele
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <i class="bi bi-heart-pulse fs-1 text-primary"></i>
+
+                <h4 class="fw-bold mt-3">Kalp Sağlığı</h4>
+
+                <p class="text-secondary">
+                  Kalp sağlığınıza yönelik kapsamlı kontrol paketi.
+                </p>
+
+                <a href="saglik-paketleri.html" class="btn btn-outline-primary">
+                  Detaylı İncele
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <i class="bi bi-person-heart fs-1 text-primary"></i>
+
+                <h4 class="fw-bold mt-3">Kadın Sağlığı</h4>
+
+                <p class="text-secondary">
+                  Kadın sağlığına özel kapsamlı sağlık kontrolleri.
+                </p>
+
+                <a href="saglik-paketleri.html" class="btn btn-outline-primary">
+                  Detaylı İncele
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SSS ================= -->
+
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="text-primary fw-semibold"> MERAK EDİLENLER </span>
+
+          <h2 class="fw-bold mt-2">Sık Sorulan Sorular</h2>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1"
+              >
+                Nasıl randevu alabilirim?
+              </button>
+            </h2>
+
+            <div
+              id="faq1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Online randevu sayfamız üzerinden bölüm ve doktor seçerek
+                randevunuzu oluşturabilirsiniz.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2"
+              >
+                Hastanenizde hangi bölümler bulunmaktadır?
+              </button>
+            </h2>
+
+            <div
+              id="faq2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Kardiyoloji, Nöroloji, Ortopedi, Göz Hastalıkları ve birçok
+                farklı tıbbi bölümümüz bulunmaktadır.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3"
+              >
+                Randevumu nasıl iptal edebilirim?
+              </button>
+            </h2>
+
+            <div
+              id="faq3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Randevu bilgileriniz üzerinden iletişim merkezimizle iletişime
+                geçebilirsiniz.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold text-white">
+              Sağlığınız için ilk adımı bugün atın.
+            </h2>
+
+            <p class="text-white-50 mb-0">
+              Uzman doktorlarımızdan randevu almak için hemen başvurun.
+            </p>
+          </div>
+
+          <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+            <a href="randevu.html" class="btn btn-light btn-lg"> Randevu Al </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h4 class="fw-bold">HASTANESİ</h4>
+
+            <p class="text-white-50">
+              Modern sağlık hizmetleri ve uzman kadromuzla yanınızdayız.
+            </p>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h6 class="fw-bold">Kurumsal</h6>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="hakkimizda.html" class="footer-link"> Hakkımızda </a>
+              </li>
+
+              <li>
+                <a href="doktorlar.html" class="footer-link"> Doktorlarımız </a>
+              </li>
+
+              <li>
+                <a href="bolumler.html" class="footer-link"> Bölümler </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h6 class="fw-bold">Hizmetler</h6>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="randevu.html" class="footer-link"> Randevu </a>
+              </li>
+
+              <li>
+                <a href="saglik-paketleri.html" class="footer-link">
+                  Sağlık Paketleri
+                </a>
+              </li>
+
+              <li>
+                <a href="subeler.html" class="footer-link"> Şubeler </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6 class="fw-bold">İletişim</h6>
+
+            <p class="text-white-50 mb-2">
+              <i class="bi bi-telephone me-2"></i>
+              444 00 00
+            </p>
+
+            <p class="text-white-50 mb-2">
+              <i class="bi bi-envelope me-2"></i>
+              info@hastanesi.com
+            </p>
+
+            <p class="text-white-50">
+              <i class="bi bi-geo-alt me-2"></i>
+              İstanbul, Türkiye
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+
+        <p class="text-center text-white-50 mb-0">
+          © 2026 Hastanesi. Tüm hakları saklıdır.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9crZq6L3J2Y7l3vY3Yqf9y9mN6V5N6g4m5N9K5L3Y6G7K8M9N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+```
