@@ -3,163 +3,222 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dr. Ahmet Yılmaz | MEDNOVA</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <!-- Kendi CSS -->
+    <title id="page-title">Doktor Detayı | MEDNOVA</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body class="bg-light">
-    <!-- ================= NAVBAR ================= -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-3 text-primary" href="index.html">MEDNOVA</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <a class="navbar-brand fw-bold fs-3 text-primary" href="index.html"
+          >MEDNOVA</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
-            <li class="nav-item"><a class="nav-link" href="hakkimizda.html">Hakkımızda</a></li>
-            <li class="nav-item"><a class="nav-link active" href="doktorlar.html">Doktorlar</a></li>
-            <li class="nav-item"><a class="nav-link" href="bolumler.html">Bölümler</a></li>
-            <li class="nav-item"><a class="nav-link" href="saglik-paketleri.html">Sağlık Paketleri</a></li>
-            <li class="nav-item"><a class="nav-link" href="subeler.html">Hastanelerimiz</a></li>
-            <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="doktorlar.html">Doktorlar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bolumler.html">Bölümler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="saglik-paketleri.html"
+                >Sağlık Paketleri</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="subeler.html">Hastanelerimiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iletisim.html">İletişim</a>
+            </li>
             <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-              <a href="randevu.html" class="btn btn-primary px-4">
-                <i class="bi bi-calendar-check me-2"></i>Randevu Al
-              </a>
+              <a href="randevu.html" class="btn btn-primary px-4"
+                ><i class="bi bi-calendar-check me-2"></i>Randevu Al</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- ================= DOKTOR DETAY HERO ================= -->
+    <!-- DOKTOR HERO -->
     <section class="doctor-detail-section py-5 bg-white">
       <div class="container">
         <div class="row align-items-center g-4">
-          <!-- SOL TARAF - FOTOĞRAF -->
           <div class="col-lg-5 text-center">
-            <div class="doctor-detail-image overflow-hidden rounded-4 shadow-sm">
-              <img src="images/doctor-1.jpg" alt="Dr. Ahmet Yılmaz" class="img-fluid w-100 object-fit-cover" style="max-height: 450px;" />
+            <div
+              class="doctor-detail-image overflow-hidden rounded-4 shadow-sm"
+            >
+              <img
+                id="doc-img"
+                src="images/doctor-1.jpg"
+                alt="Doktor Resmi"
+                class="img-fluid w-100 object-fit-cover"
+                style="max-height: 450px"
+              />
             </div>
           </div>
-
-          <!-- SAĞ TARAF - BİLGİLER -->
           <div class="col-lg-7">
-            <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-semibold mb-2">Kardiyoloji</span>
-            <h1 class="fw-bold mb-1">Dr. Ahmet Yılmaz</h1>
-            <p class="text-muted fs-5 mb-4">Kardiyoloji Uzmanı</p>
+            <span
+              id="doc-dept"
+              class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-semibold mb-2"
+              >Bölüm</span
+            >
+            <h1 id="doc-name" class="fw-bold mb-1">Doktor Adı</h1>
+            <p id="doc-title" class="text-muted fs-5 mb-4">Uzmanlık Unvanı</p>
 
             <div class="row g-3 mb-4">
               <div class="col-sm-6">
-                <div class="p-3 border rounded-3 bg-light d-flex align-items-center gap-3">
+                <div
+                  class="p-3 border rounded-3 bg-light d-flex align-items-center gap-3"
+                >
                   <i class="bi bi-award fs-3 text-primary"></i>
                   <div>
-                    <small class="text-muted d-block">Deneyim</small>
-                    <strong class="text-dark">16 Yıl</strong>
+                    <small class="text-muted d-block">Deneyim</small
+                    ><strong id="doc-exp" class="text-dark">-</strong>
                   </div>
                 </div>
               </div>
-
               <div class="col-sm-6">
-                <div class="p-3 border rounded-3 bg-light d-flex align-items-center gap-3">
+                <div
+                  class="p-3 border rounded-3 bg-light d-flex align-items-center gap-3"
+                >
                   <i class="bi bi-hospital fs-3 text-primary"></i>
                   <div>
-                    <small class="text-muted d-block">Hastane</small>
-                    <strong class="text-dark">MedNova İstanbul</strong>
+                    <small class="text-muted d-block">Hastane</small
+                    ><strong id="doc-hospital" class="text-dark">-</strong>
                   </div>
                 </div>
               </div>
-
               <div class="col-sm-6">
-                <div class="p-3 border rounded-3 bg-light d-flex align-items-center gap-3">
+                <div
+                  class="p-3 border rounded-3 bg-light d-flex align-items-center gap-3"
+                >
                   <i class="bi bi-translate fs-3 text-primary"></i>
                   <div>
-                    <small class="text-muted d-block">Diller</small>
-                    <strong class="text-dark">Türkçe, İngilizce</strong>
+                    <small class="text-muted d-block">Diller</small
+                    ><strong id="doc-lang" class="text-dark">-</strong>
                   </div>
                 </div>
               </div>
-
               <div class="col-sm-6">
-                <div class="p-3 border rounded-3 bg-light d-flex align-items-center gap-3">
+                <div
+                  class="p-3 border rounded-3 bg-light d-flex align-items-center gap-3"
+                >
                   <i class="bi bi-heart-pulse fs-3 text-primary"></i>
                   <div>
-                    <small class="text-muted d-block">Uzmanlık</small>
-                    <strong class="text-dark">Girişimsel Kardiyoloji</strong>
+                    <small class="text-muted d-block">Uzmanlık</small
+                    ><strong id="doc-subdept" class="text-dark">-</strong>
                   </div>
                 </div>
               </div>
             </div>
-
-            <a href="#appointment-section" class="btn btn-primary btn-lg px-4">
-              <i class="bi bi-calendar-check me-2"></i>Randevu Al
-            </a>
+            <a href="#appointment-section" class="btn btn-primary btn-lg px-4"
+              ><i class="bi bi-calendar-check me-2"></i>Randevu Al</a
+            >
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= DOKTOR HAKKINDA (TABS) ================= -->
+    <!-- TABLAR -->
     <section class="doctor-about-section py-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <!-- NAV TABS -->
-            <ul class="nav nav-pills nav-fill mb-4 bg-white p-2 rounded-3 shadow-sm" id="doctorTab" role="tablist">
+            <ul
+              class="nav nav-pills nav-fill mb-4 bg-white p-2 rounded-3 shadow-sm"
+              id="doctorTab"
+              role="tablist"
+            >
               <li class="nav-item" role="presentation">
-                <button class="nav-link active fw-semibold" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab">Hakkında</button>
+                <button
+                  class="nav-link active fw-semibold"
+                  id="about-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#about"
+                  type="button"
+                  role="tab"
+                >
+                  Hakkında
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link fw-semibold" id="education-tab" data-bs-toggle="tab" data-bs-target="#education" type="button" role="tab">Eğitim</button>
+                <button
+                  class="nav-link fw-semibold"
+                  id="education-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#education"
+                  type="button"
+                  role="tab"
+                >
+                  Eğitim
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link fw-semibold" id="expertise-tab" data-bs-toggle="tab" data-bs-target="#expertise" type="button" role="tab">Uzmanlık Alanları</button>
+                <button
+                  class="nav-link fw-semibold"
+                  id="expertise-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#expertise"
+                  type="button"
+                  role="tab"
+                >
+                  Uzmanlık Alanları
+                </button>
               </li>
             </ul>
 
-            <!-- TAB İÇERİKLERİ -->
-            <div class="tab-content id="doctorTabContent">
-              <!-- HAKKINDA -->
+            <div class="tab-content" id="doctorTabContent">
               <div class="tab-pane fade show active" id="about" role="tabpanel">
                 <div class="card border-0 shadow-sm p-4">
                   <h4 class="fw-bold mb-3 text-primary">Biyografi</h4>
-                  <p class="text-secondary leading-relaxed">Dr. Ahmet Yılmaz, kardiyoloji alanında 16 yıllık tecrübesiyle kardiyovasküler hastalıkların tanı ve tedavisinde geniş bir birikime sahiptir.</p>
-                  <p class="text-secondary leading-relaxed mb-0">Hasta odaklı yaklaşımı ve güncel tıbbi gelişmeleri yakından takip eden vizyonu ile MEDNOVA bünyesinde hizmet vermektedir.</p>
+                  <p id="doc-bio-1" class="text-secondary leading-relaxed"></p>
+                  <p
+                    id="doc-bio-2"
+                    class="text-secondary leading-relaxed mb-0"
+                  ></p>
                 </div>
               </div>
-
-              <!-- EĞİTİM -->
               <div class="tab-pane fade" id="education" role="tabpanel">
                 <div class="card border-0 shadow-sm p-4">
                   <h4 class="fw-bold mb-3 text-primary">Eğitim Geçmişi</h4>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-transparent px-0"><i class="bi bi-mortarboard-fill text-primary me-2"></i>İstanbul Üniversitesi Tıp Fakültesi (Lisans)</li>
-                    <li class="list-group-item bg-transparent px-0"><i class="bi bi-award-fill text-primary me-2"></i>Kardiyoloji Uzmanlığı Eğitimi</li>
-                    <li class="list-group-item bg-transparent px-0"><i class="bi bi-check-circle-fill text-primary me-2"></i>Girişimsel Kardiyoloji Fellowship Programı</li>
-                  </ul>
+                  <ul
+                    id="doc-edu-list"
+                    class="list-group list-group-flush"
+                  ></ul>
                 </div>
               </div>
-
-              <!-- UZMANLIK ALANLARI -->
               <div class="tab-pane fade" id="expertise" role="tabpanel">
                 <div class="card border-0 shadow-sm p-4">
-                  <h4 class="fw-bold mb-3 text-primary">Tedavi Edilen Hastalıklar</h4>
-                  <div class="d-flex flex-wrap gap-2">
-                    <span class="badge bg-light text-dark border p-2">Kalp Ritim Bozuklukları</span>
-                    <span class="badge bg-light text-dark border p-2">Hipertansiyon</span>
-                    <span class="badge bg-light text-dark border p-2">Koroner Arter Hastalıkları</span>
-                    <span class="badge bg-light text-dark border p-2">Girişimsel Kardiyoloji</span>
-                  </div>
+                  <h4 class="fw-bold mb-3 text-primary">
+                    Tedavi Edilen Hastalıklar
+                  </h4>
+                  <div id="doc-tags" class="d-flex flex-wrap gap-2"></div>
                 </div>
               </div>
             </div>
@@ -168,100 +227,311 @@
       </div>
     </section>
 
-    <!-- ================= AKADEMİK YAYINLAR ================= -->
+    <!-- AKADEMİK YAYINLAR -->
     <section class="academic-section py-5 bg-white">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10">
             <h3 class="fw-bold mb-4">Akademik Yayınlar & Makaleler</h3>
             <div class="card border-0 shadow-sm">
-              <div class="card-body p-4">
-                <div class="border-bottom pb-3 mb-3">
-                  <h5 class="fw-bold mb-1">Kardiyovasküler Hastalıklarda Güncel Tedavi Yaklaşımları</h5>
-                  <p class="text-secondary small mb-1">Turkish Journal of Cardiology, 2024</p>
-                  <small class="text-muted">Dr. Ahmet Yılmaz ve çalışma arkadaşları</small>
-                </div>
-
-                <div class="border-bottom pb-3 mb-3">
-                  <h5 class="fw-bold mb-1">Modern Tıpta Hasta Odaklı Tedavi Modelleri</h5>
-                  <p class="text-secondary small mb-1">Medical Research Journal, 2023</p>
-                  <small class="text-muted">Dr. Ahmet Yılmaz</small>
-                </div>
-
-                <div>
-                  <h5 class="fw-bold mb-1">Girişimsel Kardiyolojide Yeni Uygulamalar</h5>
-                  <p class="text-secondary small mb-1">International Medical Journal, 2022</p>
-                  <small class="text-muted">Dr. Ahmet Yılmaz</small>
-                </div>
-              </div>
+              <div id="doc-publications" class="card-body p-4"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= RANDEVU AL BÖLÜMÜ ================= -->
-    <section id="appointment-section" class="appointment-card-section py-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body p-4 p-md-5">
-                <h3 class="fw-bold mb-4">Hızlı Randevu Oluştur</h3>
-                <form>
-                  <div class="mb-3">
-                    <label class="form-label fw-semibold">Hastane Şubesi</label>
-                    <select class="form-select">
-                      <option selected>MedNova İstanbul</option>
-                      <option>MedNova Ankara</option>
-                      <option>MedNova İzmir</option>
-                    </select>
-                  </div>
-
-                  <div class="mb-3">
-                    <label class="form-label fw-semibold">Tarih Seçin</label>
-                    <input type="date" class="form-control" />
-                  </div>
-
-                  <div class="mb-4">
-                    <label class="form-label fw-semibold d-block">Uygun Saatler</label>
-                    <div class="d-flex flex-wrap gap-2">
-                      <input type="radio" class="btn-check" name="time" id="t0900" autocomplete="off" />
-                      <label class="btn btn-outline-primary" for="t0900">09:00</label>
-
-                      <input type="radio" class="btn-check" name="time" id="t0930" autocomplete="off" />
-                      <label class="btn btn-outline-primary" for="t0930">09:30</label>
-
-                      <input type="radio" class="btn-check" name="time" id="t1000" autocomplete="off" />
-                      <label class="btn btn-outline-primary" for="t1000">10:00</label>
-
-                      <input type="radio" class="btn-check" name="time" id="t1030" autocomplete="off" />
-                      <label class="btn btn-outline-primary" for="t1030">10:30</label>
-
-                      <input type="radio" class="btn-check" name="time" id="t1100" autocomplete="off" />
-                      <label class="btn btn-outline-primary" for="t1100">11:00</label>
-                    </div>
-                  </div>
-
-                  <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">
-                    <i class="bi bi-calendar-check me-2"></i>Randevuyu Onayla
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= FOOTER ================= -->
+    <!-- FOOTER -->
     <footer class="bg-dark text-white py-4 text-center">
       <div class="container">
-        <p class="mb-0 small">&copy; 2026 MedNova Sağlık Grubu. Tüm hakları saklıdır.</p>
+        <p class="mb-0 small">
+          &copy; 2026 MedNova Sağlık Grubu. Tüm hakları saklıdır.
+        </p>
       </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const doctors = {
+          ahmet: {
+            name: "Dr. Ahmet Yılmaz",
+            title: "Kardiyoloji Uzmanı",
+            dept: "Kardiyoloji",
+            subdept: "Girişimsel Kardiyoloji",
+            img: "images/doctor-1.jpg",
+            exp: "16 Yıl",
+            hospital: "MedNova İstanbul",
+            lang: "Türkçe, İngilizce",
+            bio1: "Dr. Ahmet Yılmaz, kardiyoloji alanında 16 yıllık tecrübesiyle hizmet vermektedir.",
+            bio2: "Hasta odaklı yaklaşımı benimser.",
+            education: [
+              "İstanbul Üniversitesi Tıp Fakültesi",
+              "Kardiyoloji Uzmanlığı",
+            ],
+            tags: ["Hipertansiyon", "Ritim Bozukluğu"],
+            publications: [
+              {
+                title: "Kardiyovasküler Makale",
+                journal: "Turkish Journal, 2024",
+              },
+            ],
+          },
+          elif: {
+            name: "Dr. Elif Kaya",
+            title: "Nöroloji Uzmanı",
+            dept: "Nöroloji",
+            subdept: "Klinik Nörofizyoloji",
+            img: "images/doctor-2.jpg",
+            exp: "12 Yıl",
+            hospital: "MedNova Ankara",
+            lang: "Türkçe, Almanca",
+            bio1: "Dr. Elif Kaya, beyin ve sinir hastalıkları uzmanıdır.",
+            bio2: "Migren tedavilerinde öncüdür.",
+            education: ["Hacettepe Üniversitesi Tıp Fakültesi"],
+            tags: ["Migren", "Epilepsi"],
+            publications: [
+              {
+                title: "Kronik Migren Tedavisi",
+                journal: "Journal of Neurology, 2024",
+              },
+            ],
+          },
+          mehmet: {
+            name: "Dr. Mehmet Demir",
+            title: "Ortopedi Uzmanı",
+            dept: "Ortopedi",
+            subdept: "Protez Cerrahi",
+            img: "images/doctor-3.jpg",
+            exp: "14 Yıl",
+            hospital: "MedNova İstanbul",
+            lang: "Türkçe, İngilizce",
+            bio1: "Diz-kalça protezi ameliyatlarında uzmandır.",
+            bio2: "",
+            education: ["Ankara Üniversitesi Tıp Fakültesi"],
+            tags: ["Diz Protezi", "Artroskopi"],
+            publications: [
+              {
+                title: "Artroskopik Cerrahi",
+                journal: "Orthopedic Review, 2023",
+              },
+            ],
+          },
+          ali: {
+            name: "Dr. Ali Arslan",
+            title: "Göz Hastalıkları Uzmanı",
+            dept: "Göz",
+            subdept: "Lazer Cerrahi",
+            img: "images/doctor-4.jpg",
+            exp: "10 Yıl",
+            hospital: "MedNova İzmir",
+            lang: "Türkçe",
+            bio1: "Katarakt ve lazer operasyonlarında uzmandır.",
+            bio2: "",
+            education: ["Ege Üniversitesi Tıp Fakültesi"],
+            tags: ["Katarakt", "Lazer"],
+            publications: [
+              {
+                title: "Refraktif Cerrahi",
+                journal: "Ophthalmology Today, 2024",
+              },
+            ],
+          },
+          canan: {
+            name: "Dr. Canan Kaya",
+            title: "Çocuk Sağlığı Uzmanı",
+            dept: "Çocuk Sağlığı",
+            subdept: "Pediatri",
+            img: "images/doctor-5.jpg",
+            exp: "11 Yıl",
+            hospital: "MedNova İstanbul",
+            lang: "Türkçe, Fransızca",
+            bio1: "Çocuk gelişim takibi yapmaktadır.",
+            bio2: "",
+            education: ["Marmara Üniversitesi Tıp"],
+            tags: ["Aşı Takvimi", "Bebek Gelişimi"],
+            publications: [
+              {
+                title: "Çocukluk Çağı Beslenmesi",
+                journal: "Pediatric Health, 2023",
+              },
+            ],
+          },
+          selim: {
+            name: "Dr. Selim Yıldız",
+            title: "Dermatoloji Uzmanı",
+            dept: "Dermatoloji",
+            subdept: "Kozmetik",
+            img: "images/doctor-6.jpg",
+            exp: "9 Yıl",
+            hospital: "MedNova Ankara",
+            lang: "Türkçe",
+            bio1: "Cilt ve estetik uygulamaları yapar.",
+            bio2: "",
+            education: ["Gazi Üniversitesi Tıp"],
+            tags: ["Akne", "Leke Tedavisi"],
+            publications: [
+              { title: "Deri Bariyeri", journal: "Dermatology Clinic, 2023" },
+            ],
+          },
+          emre: {
+            name: "Dr. Emre Çelik",
+            title: "Genel Cerrahi Uzmanı",
+            dept: "Genel Cerrahi",
+            subdept: "Laparoskopi",
+            img: "images/doctor-7.jpg",
+            exp: "15 Yıl",
+            hospital: "MedNova İstanbul",
+            lang: "Türkçe",
+            bio1: "Kapalı ameliyatlarda uzmandır.",
+            bio2: "",
+            education: ["Cerrahpaşa Tıp Fakültesi"],
+            tags: ["Obezite Cerrahisi", "Fıtık"],
+            publications: [
+              {
+                title: "Minimal İnvaziv Cerrahi",
+                journal: "Surgical Research, 2024",
+              },
+            ],
+          },
+          derya: {
+            name: "Dr. Derya Aydın",
+            title: "Kadın Hastalıkları Uzmanı",
+            dept: "Kadın Doğum",
+            subdept: "Riskli Gebelik",
+            img: "images/doctor-8.jpg",
+            exp: "13 Yıl",
+            hospital: "MedNova İzmir",
+            lang: "Türkçe",
+            bio1: "Gebelik takibi ve doğum alanında uzmandır.",
+            bio2: "",
+            education: ["Dokuz Eylül Tıp"],
+            tags: ["Gebelik Takibi", "Doğum"],
+            publications: [
+              { title: "Perinatoloji", journal: "Gynecology Today, 2023" },
+            ],
+          },
+          ece: {
+            name: "Dr. Ece Şahin",
+            title: "Üroloji Uzmanı",
+            dept: "Üroloji",
+            subdept: "Böbrek Taşı",
+            img: "images/doctor-9.jpg",
+            exp: "8 Yıl",
+            hospital: "MedNova Ankara",
+            lang: "Türkçe",
+            bio1: "Lazerle taş kırma tedavileri sunar.",
+            bio2: "",
+            education: ["Eskişehir Osmangazi Tıp"],
+            tags: ["Böbrek Taşı", "Prostat"],
+            publications: [
+              { title: "Taş Tedavisi", journal: "Urology World, 2023" },
+            ],
+          },
+          burak: {
+            name: "Dr. Burak Demir",
+            title: "Psikiyatri Uzmanı",
+            dept: "Psikiyatri",
+            subdept: "Anksiyete",
+            img: "images/doctor-10.jpg",
+            exp: "11 Yıl",
+            hospital: "MedNova İstanbul",
+            lang: "Türkçe",
+            bio1: "Anksiyete ve panik atak alanında uzmandır.",
+            bio2: "",
+            education: ["İstanbul Tıp Fakültesi"],
+            tags: ["Depresyon", "Anksiyete"],
+            publications: [
+              {
+                title: "Kaygı Bozuklukları",
+                journal: "Psychiatry Quarterly, 2024",
+              },
+            ],
+          },
+          kerem: {
+            name: "Dr. Kerem Özkan",
+            title: "Radyoloji Uzmanı",
+            dept: "Radyoloji",
+            subdept: "Girişimsel",
+            img: "images/doctor-11.jpg",
+            exp: "14 Yıl",
+            hospital: "MedNova İstanbul",
+            lang: "Türkçe",
+            bio1: "Görüntüleme ve anjiyo alanında uzmandır.",
+            bio2: "",
+            education: ["Çukurova Tıp Fakültesi"],
+            tags: ["MR", "Ultrason"],
+            publications: [
+              { title: "MR Görüntüleme", journal: "Radiology Insights, 2022" },
+            ],
+          },
+          fikret: {
+            name: "Dr. Fikret Koç",
+            title: "Endokrinoloji Uzmanı",
+            dept: "Endokrinoloji",
+            subdept: "Diyabet",
+            img: "images/doctor-12.jpg",
+            exp: "18 Yıl",
+            hospital: "MedNova Ankara",
+            lang: "Türkçe",
+            bio1: "Diyabet ve tiroit hastalıkları uzmandır.",
+            bio2: "",
+            education: ["Ege Üniversitesi Tıp"],
+            tags: ["Diyabet", "Tiroit"],
+            publications: [
+              { title: "Tip 2 Diyabet", journal: "Endocrinology Today, 2024" },
+            ],
+          },
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        let docId = urlParams.get("id");
+
+        // Eğer id girilmediyse varsayılan olarak ahmet'i göster
+        if (!docId || !doctors[docId]) {
+          docId = "ahmet";
+        }
+
+        const doc = doctors[docId];
+
+        document.getElementById("doc-name").textContent = doc.name;
+        document.getElementById("doc-title").textContent = doc.title;
+        document.getElementById("doc-dept").textContent = doc.dept;
+        document.getElementById("doc-subdept").textContent = doc.subdept;
+        document.getElementById("doc-img").src = doc.img;
+        document.getElementById("doc-exp").textContent = doc.exp;
+        document.getElementById("doc-hospital").textContent = doc.hospital;
+        document.getElementById("doc-lang").textContent = doc.lang;
+        document.getElementById("page-title").textContent =
+          `${doc.name} | MEDNOVA`;
+
+        document.getElementById("doc-bio-1").textContent = doc.bio1;
+        document.getElementById("doc-bio-2").textContent = doc.bio2 || "";
+
+        const eduList = document.getElementById("doc-edu-list");
+        eduList.innerHTML = "";
+        doc.education.forEach((item) => {
+          eduList.innerHTML += `<li class="list-group-item bg-transparent px-0"><i class="bi bi-mortarboard-fill text-primary me-2"></i>${item}</li>`;
+        });
+
+        const tagBox = document.getElementById("doc-tags");
+        tagBox.innerHTML = "";
+        doc.tags.forEach((tag) => {
+          tagBox.innerHTML += `<span class="badge bg-light text-dark border p-2">${tag}</span>`;
+        });
+
+        const pubBox = document.getElementById("doc-publications");
+        pubBox.innerHTML = "";
+        doc.publications.forEach((pub) => {
+          pubBox.innerHTML += `
+            <div class="border-bottom pb-3 mb-3">
+              <h5 class="fw-bold mb-1">${pub.title}</h5>
+              <p class="text-secondary small mb-1">${pub.journal}</p>
+              <small class="text-muted">${doc.name}</small>
+            </div>`;
+        });
+      });
+    </script>
   </body>
 </html>

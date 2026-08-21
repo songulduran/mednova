@@ -122,7 +122,10 @@
 
                 <p>Kardiyoloji Uzmanı</p>
 
-                <a href="doktor-detay.html" class="btn btn-outline-primary">
+                <a
+                  href="doktor-detay.html?id=ahmet"
+                  class="btn btn-outline-primary"
+                >
                   Profili İncele
                 </a>
               </div>
@@ -142,7 +145,10 @@
 
                 <p>Nöroloji Uzmanı</p>
 
-                <a href="doktor-detay-2.html" class="btn btn-outline-primary">
+                <a
+                  href="doktor-detay-2.html?id=elif"
+                  class="btn btn-outline-primary"
+                >
                   Profili İncele
                 </a>
               </div>
@@ -162,7 +168,10 @@
 
                 <p>Ortopedi Uzmanı</p>
 
-                <a href="doktor-detay-3.html" class="btn btn-outline-primary">
+                <a
+                  href="doktor-detay-3.html?id=mehmet"
+                  class="btn btn-outline-primary"
+                >
                   Profili İncele
                 </a>
               </div>
@@ -182,7 +191,10 @@
 
                 <p>Göz Hastalıkları Uzmanı</p>
 
-                <a href="doktor-detay-4.html" class="btn btn-outline-primary">
+                <a
+                  href="doktor-detay-4.html?id=ali"
+                  class="btn btn-outline-primary"
+                >
                   Profili İncele
                 </a>
               </div>
@@ -202,7 +214,10 @@
 
                 <p>Çocuk Sağlığı Uzmanı</p>
 
-                <a href="doktor-detay-5.html" class="btn btn-outline-primary">
+                <a
+                  href="doktor-detay-5.html?id=canan"
+                  class="btn btn-outline-primary"
+                >
                   Profili İncele
                 </a>
               </div>
@@ -222,7 +237,10 @@
 
                 <p>Dermatoloji Uzmanı</p>
 
-                <a href="doktor-detay-6.html" class="btn btn-outline-primary">
+                <a
+                  href="doktor-detay-6.html?id=selim"
+                  class="btn btn-outline-primary"
+                >
                   Profili İncele
                 </a>
               </div>
@@ -242,7 +260,10 @@
 
                 <p>Genel Cerrahi Uzmanı</p>
 
-                <a href="doktor-detay-7.html" class="btn btn-outline-primary">
+                <a
+                  href="doktor-detay-7.html?id=emre"
+                  class="btn btn-outline-primary"
+                >
                   Profili İncele
                 </a>
               </div>
@@ -262,7 +283,10 @@
 
                 <p>Kadın Hastalıkları Uzmanı</p>
 
-                <a href="doktor-detay-8.html" class="btn btn-outline-primary">
+                <a
+                  href="doktor-detay-8.html?id=derya"
+                  class="btn btn-outline-primary"
+                >
                   Profili İncele
                 </a>
               </div>
@@ -281,7 +305,10 @@
 
                 <p>Üroloji Uzmanı</p>
 
-                <a href="doktor-detay-9.html" class="btn btn-outline-primary">
+                <a
+                  href="doktor-detay-9.html?id=ece"
+                  class="btn btn-outline-primary"
+                >
                   Profili İncele
                 </a>
               </div>
@@ -301,7 +328,10 @@
 
                 <p>Psikiyatri Uzmanı</p>
 
-                <a href="doktor-detay-10.html" class="btn btn-outline-primary">
+                <a
+                  href="doktor-detay-10.html?id=burak"
+                  class="btn btn-outline-primary"
+                >
                   Profili İncele
                 </a>
               </div>
@@ -321,7 +351,10 @@
 
                 <p>Radyoloji Uzmanı</p>
 
-                <a href="doktor-detay-11.html" class="btn btn-outline-primary">
+                <a
+                  href="doktor-detay-11.html?id=kerem"
+                  class="btn btn-outline-primary"
+                >
                   Profili İncele
                 </a>
               </div>
@@ -341,7 +374,10 @@
 
                 <p>Endokrinoloji Uzmanı</p>
 
-                <a href="doktor-detay-12.html" class="btn btn-outline-primary">
+                <a
+                  href="doktor-detay-12.html?id=fikret"
+                  class="btn btn-outline-primary"
+                >
                   Profili İncele
                 </a>
               </div>
@@ -424,6 +460,96 @@
         </div>
       </div>
     </section>
+
+    <!-- RANDEVU KARTI BÖLÜMÜ -->
+    <div class="card border-0 shadow-sm">
+      <div class="card-body p-4">
+        <h4 class="fw-bold mb-4">Hızlı Randevu Oluştur</h4>
+        <form>
+          <!-- Hastane Seçimi -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Hastane Şubesi</label>
+            <select class="form-select">
+              <option selected disabled>Hastane Seçiniz...</option>
+              <option>MedNova İstanbul (Merkez)</option>
+              <option>MedNova Ankara</option>
+              <option>MedNova İzmir</option>
+            </select>
+          </div>
+
+          <!-- Tarih Seçimi -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Tarih Seçin</label>
+            <input type="date" class="form-control" />
+          </div>
+
+          <!-- Saat Seçimi (Bootstrap Buttons) -->
+          <div class="mb-4">
+            <label class="form-label fw-semibold d-block">Uygun Saatler</label>
+            <div class="d-flex flex-wrap gap-2">
+              <input
+                type="radio"
+                class="btn-check"
+                name="timeOptions"
+                id="time1"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="time1">09:00</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="timeOptions"
+                id="time2"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="time2">09:30</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="timeOptions"
+                id="time3"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="time3">10:00</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="timeOptions"
+                id="time4"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="time4">10:30</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="timeOptions"
+                id="time5"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="time5">11:00</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="timeOptions"
+                id="time6"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="time6">11:30</label>
+            </div>
+          </div>
+
+          <!-- Onay Butonu -->
+          <button type="button" class="btn btn-primary w-100 py-2 fw-semibold">
+            <i class="bi bi-calendar-check me-2"></i>Randevu Al
+          </button>
+        </form>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
