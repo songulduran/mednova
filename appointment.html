@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Randevu | MEDNOVA</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-light">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3 text-primary" href="index.html"
+          >MEDNOVA</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="doktorlar.html">Doktorlar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bolumler.html">Bölümler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="packages.html">Sağlık Paketleri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="subeler.html">Hastanelerimiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iletisim.html">İletişim</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a href="appointment.html" class="btn btn-primary px-4 active">
+                <i class="bi bi-calendar-check me-2"></i>Randevu Al
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="bg-primary text-white py-4 mb-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-1">Online Randevu Oluştur</h2>
+        <p class="text-white-50 mb-0">
+          Birkaç adımda dilediğiniz bölüm ve hekimden randevunuzu kolayca
+          planlayın.
+        </p>
+      </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="pb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="card border-0 shadow-sm p-4 p-md-5">
+              <form
+                onsubmit="
+                  event.preventDefault();
+                  alert(
+                    'Randevunuz başarıyla oluşturulmuştur! En kısa sürede sizinle iletişime geçilecektir.',
+                  );
+                "
+              >
+                <!-- HASTA BİLGİLERİ -->
+                <h5 class="fw-bold text-primary mb-3">
+                  <i class="bi bi-person-fill me-2"></i>Hasta Bilgileri
+                </h5>
+                <div class="row g-3 mb-4">
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Ad</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Adınız"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Soyad</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Soyadınız"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Telefon</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="05XX XXX XX XX"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">E-posta</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="ornek@email.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <!-- RANDEVU BİLGİLERİ -->
+                <h5 class="fw-bold text-primary mb-3">
+                  <i class="bi bi-hospital me-2"></i>Randevu Bilgileri
+                </h5>
+                <div class="row g-3 mb-4">
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Şehir</label>
+                    <select class="form-select" required>
+                      <option value="" selected disabled>Şehir Seçiniz</option>
+                      <option>İstanbul</option>
+                      <option>Ankara</option>
+                      <option>İzmir</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Hastane / Şube</label>
+                    <select class="form-select" required>
+                      <option value="" selected disabled>
+                        Hastane Seçiniz
+                      </option>
+                      <option>MedNova Kadıköy Hastanesi</option>
+                      <option>MedNova Nişantaşı Hastanesi</option>
+                      <option>MedNova Çankaya Hastanesi</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Bölüm</label>
+                    <select class="form-select" required>
+                      <option value="" selected disabled>Bölüm Seçiniz</option>
+                      <option>Kardiyoloji</option>
+                      <option>Nöroloji</option>
+                      <option>Ortopedi</option>
+                      <option>Dermatoloji</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Doktor</label>
+                    <select class="form-select" required>
+                      <option value="" selected disabled>Doktor Seçiniz</option>
+                      <option>Prof. Dr. Ahmet Yılmaz</option>
+                      <option>Doç. Dr. Elif Kaya</option>
+                      <option>Uzm. Dr. Mehmet Demir</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Tarih</label>
+                    <input type="date" class="form-control" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Saat</label>
+                    <select class="form-select" required>
+                      <option value="" selected disabled>Saat Seçiniz</option>
+                      <option>09:00</option>
+                      <option>09:30</option>
+                      <option>10:00</option>
+                      <option>10:30</option>
+                      <option>11:00</option>
+                      <option>11:30</option>
+                    </select>
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <!-- EK BİLGİLER -->
+                <h5 class="fw-bold text-primary mb-3">
+                  <i class="bi bi-chat-left-text me-2"></i>Ek Bilgiler
+                </h5>
+                <div class="mb-4">
+                  <label class="form-label fw-semibold"
+                    >Şikayetiniz / Notunuz</label
+                  >
+                  <textarea
+                    class="form-control"
+                    rows="3"
+                    placeholder="Varsa mevcutta yaşadığınız şikayetleri veya iletmek istediğiniz notları kısaca yazabilirsiniz..."
+                  ></textarea>
+                </div>
+
+                <!-- KVKK & BUTON -->
+                <div class="form-check mb-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="kvkkCheck"
+                    required
+                  />
+                  <label
+                    class="form-check-label text-muted small"
+                    for="kvkkCheck"
+                  >
+                    <a
+                      href="#"
+                      class="text-primary text-decoration-none fw-semibold"
+                      >KVKK Aydınlatma Metni</a
+                    >'ni okudum, kişisel verilerimin işlenmesini onaylıyorum.
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary w-100 py-3 fw-bold fs-5"
+                >
+                  <i class="bi bi-check-circle-fill me-2"></i>Randevu Oluştur
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 text-center">
+      <div class="container">
+        <p class="mb-0 small">
+          &copy; 2026 MedNova Sağlık Grubu. Tüm hakları saklıdır.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
