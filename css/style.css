@@ -39,3 +39,63 @@ textarea {
   --white: #ffffff;
   --border-color: #e5e7eb;
 }
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+  background-color: var(--dark-color);
+  color: var(--white);
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  min-height: 80px;
+}
+
+.navbar-brand {
+  color: var(--primary-color) !important;
+  letter-spacing: -0.5px;
+}
+
+.navbar-nav {
+  gap: 8px;
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 10px 12px !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+/* =========================
+   NAVBAR BUTTON
+========================= */
+
+.navbar .btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar .btn-primary:hover {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+}
