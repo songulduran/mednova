@@ -704,3 +704,213 @@ img {
 .about-cta .btn {
   padding: 12px 30px;
 }
+/* =========================
+   DOKTORLAR SAYFASI
+========================= */
+
+.doctors-section {
+  padding: 90px 0;
+  background-color: #f5f9fb;
+}
+
+.doctor-page-card {
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.doctor-page-card:hover {
+  transform: translateY(-6px);
+}
+
+.doctor-page-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.doctor-card-content {
+  padding: 28px;
+}
+
+.doctor-card-content span {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #e8f5f8;
+  color: #0b6e8e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.doctor-card-content h3 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #16324f;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.doctor-card-content p {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+/* =========================
+   DOKTOR FİLTRELEME
+========================= */
+
+.doctor-filter {
+  background-color: #f5f9fb;
+}
+
+.filter-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.filter-box .form-control,
+.filter-box .form-select {
+  min-height: 48px;
+  border-radius: 10px;
+}
+
+.filter-box .btn {
+  min-height: 48px;
+  border-radius: 10px;
+}
+/* =========================
+   DOKTOR DETAY
+========================= */
+
+.doctor-detail-section {
+  background-color: #ffffff;
+}
+
+.doctor-detail-image {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.doctor-detail-image img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+.doctor-detail-department {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background-color: #e8f5f8;
+  color: #0b6e8e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.doctor-info-list {
+  margin-top: 25px;
+}
+
+.doctor-info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.doctor-info-item i {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #e8f5f8;
+  color: #0b6e8e;
+
+  font-size: 20px;
+}
+
+.doctor-info-item strong {
+  display: block;
+  color: #16324f;
+}
+
+.doctor-info-item p {
+  margin: 3px 0 0;
+  color: #6b7280;
+}
+
+.doctor-about-section {
+  background-color: #f5f9fb;
+}
+
+.doctor-about-section .nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.doctor-about-section .nav-link {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.doctor-about-section .nav-link.active {
+  color: #0b6e8e;
+}
+
+.doctor-about-section .card {
+  border-radius: 16px;
+}
+
+.doctor-about-section .list-group-item {
+  padding: 15px 0;
+  background: transparent;
+  color: #555;
+}
+/* RANDEVU BÖLÜMÜ */
+
+.appointment-card-section {
+  display: block;
+  padding: 80px 0;
+  background-color: #f5f9fb;
+}
+
+.appointment-card-section .card {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.appointment-card-section h2 {
+  color: #16324f;
+}
+
+.appointment-card-section .form-label {
+  color: #16324f;
+}
+
+.appointment-card-section .form-select,
+.appointment-card-section .form-control {
+  min-height: 48px;
+  border-radius: 10px;
+}
+
+.appointment-card-section .btn-outline-primary {
+  color: #0b6e8e;
+  border-color: #0b6e8e;
+}
+
+.appointment-card-section .btn-outline-primary:hover {
+  background-color: #0b6e8e;
+  border-color: #0b6e8e;
+  color: #ffffff;
+}
