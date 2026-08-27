@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hastanelerimiz & Şubelerimiz | MEDNOVA</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -383,13 +384,482 @@
         </div>
       </div>
     </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white py-4 text-center">
+    <!-- ================= HASTANE DETAYLARI (ACCORDION SECTION) ================= -->
+    <section class="py-5 bg-white">
       <div class="container">
-        <p class="mb-0 small">
-          &copy; 2026 MedNova Sağlık Grubu. Tüm hakları saklıdır.
-        </p>
+        <div class="mb-4">
+          <span
+            class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2 rounded-pill mb-2"
+            >Detaylı Bilgiler</span
+          >
+          <h3 class="fw-bold text-dark">
+            MedNova İstanbul Hastanesi Hizmet Rehberi
+          </h3>
+          <p class="text-muted">
+            Hastanemiz, ulaşım imkanları ve hasta hizmetleri hakkında merak
+            ettiğiniz tüm detaylar aşağıda yer almaktadır.
+          </p>
+        </div>
+
+        <!-- BOOTSTRAP ACCORDION -->
+        <div
+          class="accordion custom-accordion shadow-sm rounded-3 overflow-hidden"
+          id="hospitalDetailAccordion"
+        >
+          <!-- 1. Hastane Hakkında -->
+          <div class="accordion-item border-0 border-bottom">
+            <h2 class="accordion-header" id="headingAbout">
+              <button
+                class="accordion-button fw-bold fs-6 py-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseAbout"
+                aria-expanded="true"
+                aria-controls="collapseAbout"
+              >
+                <i class="bi bi-hospital text-primary fs-5 me-3"></i> Hastane
+                Hakkında
+              </button>
+            </h2>
+            <div
+              id="collapseAbout"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingAbout"
+              data-bs-parent="#hospitalDetailAccordion"
+            >
+              <div class="accordion-body text-secondary leading-relaxed p-4">
+                http://googleusercontent.com/map_location_reference/1
+                <p>
+                  <strong
+                    >[Mednova](http://googleusercontent.com/map_location_reference/0)</strong
+                  >, 2010 yılından bu yana 45.000 metrekarelik kapalı alanı, 150
+                  yatak kapasitesi ve 12 ameliyathane salonuyla uluslararası
+                  standartlarda sağlık hizmeti sunmaktadır.
+                </p>
+                <p class="mb-0">
+                  Tam donanımlı tanı ve tedavi ünitelerimiz, JCI akreditasyon
+                  kalitesi ve alanında uzman hekim kadromuz ile 7/24 kesintisiz
+                  hizmet vermekteyiz.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Ulaşım -->
+          <div class="accordion-item border-0 border-bottom">
+            <h2 class="accordion-header" id="headingTransport">
+              <button
+                class="accordion-button collapsed fw-bold fs-6 py-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTransport"
+                aria-expanded="false"
+                aria-controls="collapseTransport"
+              >
+                <i class="bi bi-bus-front text-primary fs-5 me-3"></i> Ulaşım
+                Bilgileri
+              </button>
+            </h2>
+            <div
+              id="collapseTransport"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTransport"
+              data-bs-parent="#hospitalDetailAccordion"
+            >
+              <div class="accordion-body text-secondary p-4">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="p-3 bg-light rounded-3 h-100">
+                      <h6 class="fw-bold text-dark mb-2">
+                        <i class="bi bi-train-front me-2 text-primary"></i>Metro
+                        ile Ulaşım
+                      </h6>
+                      <p class="small mb-0">
+                        M2 Yenikapı-Hacıosman Metro hattını kullanarak
+                        <strong>Gayrettepe</strong> veya
+                        <strong>Levent</strong> durağında inip 5 dakikalık
+                        yürüme mesafesiyle hastanemize ulaşabilirsiniz.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="p-3 bg-light rounded-3 h-100">
+                      <h6 class="fw-bold text-dark mb-2">
+                        <i class="bi bi-bus-front-fill me-2 text-primary"></i
+                        >Otobüs ile Ulaşım
+                      </h6>
+                      <p class="small mb-0">
+                        Barbaros Bulvarı üzerinden geçen tüm Beşiktaş otobüs
+                        hatlarını kullanabilir,
+                        <strong>Eski Yıldız Binası</strong> durağında
+                        inebilirsiniz.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Otopark -->
+          <div class="accordion-item border-0 border-bottom">
+            <h2 class="accordion-header" id="headingParking">
+              <button
+                class="accordion-button collapsed fw-bold fs-6 py-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseParking"
+                aria-expanded="false"
+                aria-controls="collapseParking"
+              >
+                <i class="bi bi-p-square-fill text-primary fs-5 me-3"></i>
+                Otopark ve Vale Hizmeti
+              </button>
+            </h2>
+            <div
+              id="collapseParking"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingParking"
+              data-bs-parent="#hospitalDetailAccordion"
+            >
+              <div class="accordion-body text-secondary p-4">
+                <p>
+                  Hastanemizde 300 araç kapasiteli kapalı otopark alanı
+                  bulunmaktadır.
+                </p>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i
+                    ><strong>Vale Hizmeti:</strong> Hastane ana giriş kapısında
+                    24 saat boyunca vale personellerimiz hizmetinizdedir.
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i
+                    ><strong>Ücretsiz Park:</strong> Yatan hasta yakınları ve
+                    acil servis girişleri ilk 2 saat ücretsizdir.
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i
+                    ><strong>Engelli Park Yeri:</strong> Otopark girişine en
+                    yakın noktalarda özel engelli park alanları tahsis
+                    edilmiştir.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Ziyaret Saatleri -->
+          <div class="accordion-item border-0 border-bottom">
+            <h2 class="accordion-header" id="headingVisiting">
+              <button
+                class="accordion-button collapsed fw-bold fs-6 py-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseVisiting"
+                aria-expanded="false"
+                aria-controls="collapseVisiting"
+              >
+                <i class="bi bi-clock-history text-primary fs-5 me-3"></i> Hasta
+                Ziyaret Saatleri & Kuralları
+              </button>
+            </h2>
+            <div
+              id="collapseVisiting"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingVisiting"
+              data-bs-parent="#hospitalDetailAccordion"
+            >
+              <div class="accordion-body text-secondary p-4">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered table-striped align-middle mb-3"
+                  >
+                    <thead class="table-primary">
+                      <tr>
+                        <th>Bölüm</th>
+                        <th>Ziyaret Saatleri</th>
+                        <th>Refakatçi Kabulü</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Yataklı Servisler</td>
+                        <td>10:00 - 22:00</td>
+                        <td>1 Kişi (Sürekli)</td>
+                      </tr>
+                      <tr>
+                        <td>Yoğun Bakım Ünitesi</td>
+                        <td>14:00 - 15:00</td>
+                        <td>Kısa süreli (Hekim İzniyle)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="small text-muted mb-0">
+                  <i class="bi bi-info-circle me-1"></i> Hasta sağlığı için aynı
+                  anda en fazla 2 ziyaretçi kabul edilmektedir ve 6 yaş altı
+                  çocuk ziyaretçilerin yataklı servislere getirilmemesi rica
+                  olunur.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Acil Servis -->
+          <div class="accordion-item border-0 border-bottom">
+            <h2 class="accordion-header" id="headingEmergency">
+              <button
+                class="accordion-button collapsed fw-bold fs-6 py-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEmergency"
+                aria-expanded="false"
+                aria-controls="collapseEmergency"
+              >
+                <i class="bi bi-heart-pulse-fill text-primary fs-5 me-3"></i>
+                Acil Servis ve Ambulans Hizmeti
+              </button>
+            </h2>
+            <div
+              id="collapseEmergency"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingEmergency"
+              data-bs-parent="#hospitalDetailAccordion"
+            >
+              <div class="accordion-body text-secondary p-4">
+                <div
+                  class="alert alert-danger d-flex align-items-center mb-3"
+                  role="alert"
+                >
+                  <i class="bi bi-exclamation-triangle-fill fs-4 me-3"></i>
+                  <div>
+                    <strong>7/24 Kesintisiz Acil Hat:</strong> Acil ambulans
+                    talepleriniz için <strong>444 0 999</strong> numaralı
+                    hattımızı doğrudan arayabilirsiniz.
+                  </div>
+                </div>
+                <p class="mb-0">
+                  Acil servisimiz; Kırmızı, Sarı ve Yeşil alan triyaj üniteleri,
+                  acil müdahale odaları ve tam donanımlı acil ambulans filomuz
+                  ile günün her saati hizmet vermektedir.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Hasta Hizmetleri -->
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingServices">
+              <button
+                class="accordion-button collapsed fw-bold fs-6 py-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseServices"
+                aria-expanded="false"
+                aria-controls="collapseServices"
+              >
+                <i class="bi bi-person-badge-fill text-primary fs-5 me-3"></i>
+                Hasta Hizmetleri ve Konfor
+              </button>
+            </h2>
+            <div
+              id="collapseServices"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingServices"
+              data-bs-parent="#hospitalDetailAccordion"
+            >
+              <div class="accordion-body text-secondary p-4">
+                <div class="row g-3">
+                  <div class="col-md-4">
+                    <div class="border p-3 rounded-3 text-center">
+                      <i class="bi bi-wifi text-primary fs-3 d-block mb-2"></i>
+                      <h6 class="fw-bold text-dark mb-1">Ücretsiz Wi-Fi</h6>
+                      <p class="small text-muted mb-0">
+                        Tüm oda ve bekleme alanlarında yüksek hızlı internet.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="border p-3 rounded-3 text-center">
+                      <i
+                        class="bi bi-cup-hot text-primary fs-3 d-block mb-2"
+                      ></i>
+                      <h6 class="fw-bold text-dark mb-1">
+                        Kafeterya & Restoran
+                      </h6>
+                      <p class="small text-muted mb-0">
+                        Zemin katta 07:00 - 23:00 saatleri arasında açık sosyal
+                        alan.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="border p-3 rounded-3 text-center">
+                      <i
+                        class="bi bi-shield-check text-primary fs-3 d-block mb-2"
+                      ></i>
+                      <h6 class="fw-bold text-dark mb-1">
+                        Özel Sigorta Danışmanlığı
+                      </h6>
+                      <p class="small text-muted mb-0">
+                        Anlaşmalı kurumlar için hızlı onay ve başvuru masası.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= FOOTER SECTION ================= -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <!-- 1. SÜTUN: MEDNOVA HAKKINDA -->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="fw-bold text-primary mb-3">MEDNOVA</h4>
+            <p class="text-white-50 small leading-relaxed mb-3">
+              MedNova Sağlık Grubu, ileri tıp teknolojileri ve alanında uzman
+              hekim kadrosuyla uluslararası standartlarda, insan odaklı sağlık
+              hizmeti sunmaktadır.
+            </p>
+            <div class="d-flex gap-2">
+              <a
+                href="#"
+                class="btn btn-outline-light btn-sm rounded-circle"
+                aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-outline-light btn-sm rounded-circle"
+                aria-label="Twitter"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-outline-light btn-sm rounded-circle"
+                aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-outline-light btn-sm rounded-circle"
+                aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- 2. SÜTUN: HIZLI BAĞLANTILAR -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold text-white mb-3">Hızlı Bağlantılar</h5>
+            <ul class="list-unstyled text-white-50 small">
+              <li class="mb-2">
+                <a
+                  href="doktorlar.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i>
+                  Doktorlar</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="bolumler.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i>
+                  Bölümler</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="appointment.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i> Randevu
+                  Al</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="about.html" class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i>
+                  Hakkımızda</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- 3. SÜTUN: HASTA HİZMETLERİ -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold text-white mb-3">Hasta Hizmetleri</h5>
+            <ul class="list-unstyled text-white-50 small">
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i> Hasta
+                  Hakları</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="subeler.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i> Ziyaret
+                  Saatleri</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="packages.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i>
+                  Anlaşmalı Kurumlar</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="about.html" class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i> SSS</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- 4. SÜTUN: İLETİŞİM BİLGİLERİ -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold text-white mb-3">İletişim</h5>
+            <ul class="list-unstyled text-white-50 small">
+              <li class="mb-2 d-flex align-items-center">
+                <i class="bi bi-telephone-fill me-2 text-primary"></i>
+                <span>444 0 999</span>
+              </li>
+              <li class="mb-2 d-flex align-items-center">
+                <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                <span>info@mednova.com.tr</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="bi bi-geo-alt-fill me-2 text-primary mt-1"></i>
+                <span>Barbaros Bulvarı No: 124, Beşiktaş / İstanbul</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ALT BİLGİ & TELİF HAKKI -->
+        <hr class="border-secondary my-4" />
+        <div class="row align-items-center text-white-50 small">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            &copy; 2026 MedNova Sağlık Grubu. Tüm hakları saklıdır.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-white-50 text-decoration-none me-3"
+              >Gizlilik Politikası</a
+            >
+            <a href="#" class="text-white-50 text-decoration-none"
+              >KVKK Bilgilendirme</a
+            >
+          </div>
+        </div>
       </div>
     </footer>
 

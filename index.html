@@ -5,25 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>MEDNOVA Hastanesi</title>
-
-    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
 
-    <!-- Kendi CSS dosyamız -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- ================= ÜST BİLGİ ================= -->
-
     <div class="top-bar d-none d-lg-block">
       <div class="container">
         <div class="row align-items-center">
@@ -43,14 +37,12 @@
       </div>
     </div>
 
-    <!-- ================= NAVBAR ================= -->
-
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
       <div class="container">
         <!-- LOGO -->
         <a class="navbar-brand fw-bold fs-3" href="index.html"> MEDNOVA </a>
-
-        <!-- MOBİL MENÜ BUTONU -->
+        <!-- mobile menu button -->
         <button
           class="navbar-toggler"
           type="button"
@@ -63,7 +55,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- MENÜ -->
+        <!-- NAVBAR MENÜ -->
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
@@ -77,7 +69,6 @@
             <li class="nav-item">
               <a class="nav-link" href="doktorlar.html"> Doktorlar </a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="bolumler.html"> Bölümler </a>
             </li>
@@ -95,20 +86,31 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="iletisim.html"> İletişim </a>
+              <a class="nav-link" href="contact.html"> İletişim </a>
             </li>
 
-            <!-- RANDEVU BUTONU -->
+            <!-- RANDEVU AL BUTONU -->
             <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-              <a href="randevu.html" class="btn btn-primary px-4">
+              <a href="randevu.html" class="btn btn-primary">
                 <i class="bi bi-calendar-check me-2"></i>
                 Randevu Al
               </a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <button
+                type="button"
+                class="btn btn-danger fw-semibold px-3"
+                data-bs-toggle="modal"
+                data-bs-target="#acilYardimModal"
+              >
+                <i class="bi bi-telephone-outbound-fill me-2"></i>Acil Yardım
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!-- hero -->
     <section class="hero-section">
       <div class="container">
@@ -149,12 +151,9 @@
         </div>
       </div>
     </section>
-    <!-- ================= HIZLI ERİŞİM ================= -->
-
     <section class="quick-access py-5">
       <div class="container">
         <div class="row g-4">
-          <!-- DOKTOR BUL -->
           <div class="col-md-6 col-lg-3">
             <div class="quick-card h-100 p-4">
               <i class="bi bi-person-badge fs-1"></i>
@@ -168,7 +167,6 @@
             </div>
           </div>
 
-          <!-- BÖLÜMLER -->
           <div class="col-md-6 col-lg-3">
             <div class="quick-card h-100 p-4">
               <i class="bi bi-hospital fs-1"></i>
@@ -182,7 +180,6 @@
             </div>
           </div>
 
-          <!-- RANDEVU -->
           <div class="col-md-6 col-lg-3">
             <div class="quick-card h-100 p-4">
               <i class="bi bi-calendar2-check fs-1"></i>
@@ -196,7 +193,6 @@
             </div>
           </div>
 
-          <!-- HASTANE BUL -->
           <div class="col-md-6 col-lg-3">
             <div class="quick-card h-100 p-4">
               <i class="bi bi-geo-alt fs-1"></i>
@@ -212,12 +208,9 @@
         </div>
       </div>
     </section>
-    <!-- ================= DOKTORLAR ================= -->
-
+    <!-- DOKTORLAR KISMI -->
     <section class="doctors-section py-5">
       <div class="container">
-        <!-- BAŞLIK -->
-
         <div class="section-title text-center mb-5">
           <span> UZMAN KADROMUZ </span>
 
@@ -229,11 +222,8 @@
           </p>
         </div>
 
-        <!-- DOKTOR KARTLARI -->
-
+        <!-- KARTAR -->
         <div class="row g-4">
-          <!-- DOKTOR 1 -->
-
           <div class="col-md-6 col-lg-4">
             <div class="doctor-card">
               <img src="images/doctor-1.jpg" alt="Dr. Ahmet Yılmaz" />
@@ -250,8 +240,6 @@
             </div>
           </div>
 
-          <!-- DOKTOR 2 -->
-
           <div class="col-md-6 col-lg-4">
             <div class="doctor-card">
               <img src="images/doctor-2.jpg" alt="Dr. Elif Kaya" />
@@ -267,8 +255,6 @@
               </div>
             </div>
           </div>
-
-          <!-- DOKTOR 3 -->
 
           <div class="col-md-6 col-lg-4">
             <div class="doctor-card">
@@ -287,8 +273,6 @@
           </div>
         </div>
 
-        <!-- TÜM DOKTORLAR -->
-
         <div class="text-center mt-5">
           <a href="doktorlar.html" class="btn btn-primary doctors-button">
             Tüm Doktorları Gör
@@ -296,7 +280,6 @@
         </div>
       </div>
     </section>
-    <!-- ================= BÖLÜMLER ================= -->
 
     <section class="departments-section py-5">
       <div class="container">
@@ -377,7 +360,6 @@
         </div>
       </div>
     </section>
-    <!-- ================= SAĞLIK PAKETLERİ ================= -->
 
     <section class="packages-section py-5">
       <div class="container">
@@ -390,8 +372,6 @@
         </div>
 
         <div class="row g-4">
-          <!-- GENEL CHECK-UP -->
-
           <div class="col-md-4">
             <div class="package-card">
               <div class="package-icon">
@@ -411,8 +391,6 @@
             </div>
           </div>
 
-          <!-- KALP SAĞLIĞI -->
-
           <div class="col-md-4">
             <div class="package-card">
               <div class="package-icon">
@@ -429,8 +407,6 @@
               </a>
             </div>
           </div>
-
-          <!-- KADIN SAĞLIĞI -->
 
           <div class="col-md-4">
             <div class="package-card">
@@ -451,100 +427,265 @@
         </div>
       </div>
     </section>
-    <!-- ================= SSS ================= -->
-
-    <section class="faq-section py-5">
+    <!-- FAQ QUESTION -->
+    <section class="py-5 bg-light">
       <div class="container">
-        <div class="section-title text-center mb-5">
-          <span>MERAK EDİLENLER</span>
-
-          <h2>Sık Sorulan Sorular</h2>
-
-          <p>Hastanemiz ve hizmetlerimiz hakkında merak ettikleriniz.</p>
+        <div class="text-center mb-5">
+          <span
+            class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2 rounded-pill mb-2"
+            >Aklınıza Takılanlar</span
+          >
+          <h2 class="fw-bold text-dark">Sık Sorulan Sorular</h2>
+          <p class="text-muted">
+            Hizmetlerimiz ve hastane süreçlerimiz hakkında en çok merak edilen
+            cevaplar.
+          </p>
         </div>
 
-        <div class="accordion" id="faqAccordion">
-          <!-- SORU 1 -->
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq1"
-              >
-                Nasıl randevu alabilirim?
-              </button>
-            </h2>
-
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
             <div
-              id="faq1"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#faqAccordion"
+              class="accordion custom-accordion shadow-sm rounded-4 overflow-hidden"
+              id="faqAccordion"
             >
-              <div class="accordion-body">
-                Online randevu sayfamız üzerinden bölüm ve doktor seçerek
-                randevunuzu kolayca oluşturabilirsiniz.
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="faqHeading1">
+                  <button
+                    class="accordion-button fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                    aria-expanded="true"
+                    aria-controls="faq1"
+                  >
+                    <i
+                      class="bi bi-question-circle-fill text-primary me-3 fs-5"
+                    ></i>
+                    Nasıl randevu alabilirim?
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="faqHeading1"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-secondary">
+                    Web sitemizdeki <strong>Randevu Al</strong> butonunu
+                    kullanarak, mobil uygulamamız üzerinden veya
+                    <strong>444 0 999</strong> çağrı merkezimizi arayarak
+                    dilediğiniz doktor ve saat için kolayca randevu
+                    oluşturabilirsiniz.
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- SORU 2 -->
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq2"
-              >
-                Hastanenizde hangi bölümler bulunmaktadır?
-              </button>
-            </h2>
-
-            <div
-              id="faq2"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                Kardiyoloji, Nöroloji, Ortopedi, Göz Hastalıkları, Çocuk Sağlığı
-                ve birçok farklı tıbbi bölümümüz bulunmaktadır.
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="faqHeading2">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                    aria-expanded="false"
+                    aria-controls="faq2"
+                  >
+                    <i class="bi bi-x-circle-fill text-primary me-3 fs-5"></i>
+                    Randevumu nasıl iptal edebilirim?
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading2"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-secondary">
+                    Randevu iptal veya değişiklik işlemlerinizi online hasta
+                    portalımız üzerinden "Randevularım" sekmesinden
+                    gerçekleştirebilir veya çağrı merkezimizi arayarak
+                    randevunuzdan en az 2 saat önce bilgilendirme
+                    yapabilirsiniz.
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- SORU 3 -->
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="faqHeading3">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                    aria-expanded="false"
+                    aria-controls="faq3"
+                  >
+                    <i class="bi bi-clock-fill text-primary me-3 fs-5"></i> Acil
+                    servis 24 saat açık mı?
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading3"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-secondary">
+                    Evet, tüm şubelerimizde Acil Servis ünitelerimiz uzman
+                    hekim, hemşire ve tam donanımlı ambulans filomuzla 7 gün 24
+                    saat kesintisiz hizmet vermektedir.
+                  </div>
+                </div>
+              </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq3"
-              >
-                Randevumu nasıl iptal edebilirim?
-              </button>
-            </h2>
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="faqHeading4">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                    aria-expanded="false"
+                    aria-controls="faq4"
+                  >
+                    <i class="bi bi-shield-check text-primary me-3 fs-5"></i>
+                    Sağlık sigortaları geçerli mi?
+                  </button>
+                </h2>
+                <div
+                  id="faq4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading4"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-secondary">
+                    SGK ve Türkiye'deki önde gelen tüm Özel Sağlık Sigortası ile
+                    Tamamlayıcı Sağlık Sigortası (TSS) kurumlarıyla anlaşmamız
+                    bulunmaktadır. Poliçe kapsamınızı banko görevlilerimizden
+                    öğrenebilirsiniz.
+                  </div>
+                </div>
+              </div>
 
-            <div
-              id="faq3"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                Randevu bilgileriniz üzerinden iletişim merkezimizle iletişime
-                geçerek randevunuzu iptal edebilirsiniz.
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="faqHeading5">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq5"
+                    aria-expanded="false"
+                    aria-controls="faq5"
+                  >
+                    <i class="bi bi-cup-hot-fill text-primary me-3 fs-5"></i>
+                    Check-up için aç gelmeli miyim?
+                  </button>
+                </h2>
+                <div
+                  id="faq5"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading5"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-secondary">
+                    Evet, kan tetkiklerinin ve tahlillerin doğru sonuç vermesi
+                    için Check-up randevunuza en az 8-12 saatlik açlıkla (sadece
+                    su tüketebilirsiniz) gelmeniz gerekmektedir.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="faqHeading6">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq6"
+                    aria-expanded="false"
+                    aria-controls="faq6"
+                  >
+                    <i
+                      class="bi bi-file-earmark-medical-fill text-primary me-3 fs-5"
+                    ></i>
+                    Sonuçlarımı nasıl öğrenebilirim?
+                  </button>
+                </h2>
+                <div
+                  id="faq6"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading6"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-secondary">
+                    Laboratuvar ve radyoloji sonuçlarınıza web sitemizdeki
+                    "E-Sonuç" panelinden T.C. Kimlik numaranız ve SMS şifreniz
+                    ile veya mobil uygulamamız üzerinden anında erişebilirsiniz.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="faqHeading7">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq7"
+                    aria-expanded="false"
+                    aria-controls="faq7"
+                  >
+                    <i class="bi bi-people-fill text-primary me-3 fs-5"></i>
+                    Refakatçi kabul ediliyor mu?
+                  </button>
+                </h2>
+                <div
+                  id="faq7"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading7"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-secondary">
+                    Yataklı servislerimizde yatan hastalarımız için 1 refakatçi
+                    kalmasına izin verilmektedir. Yoğun bakım ünitelerinde ise
+                    refakatçi kabulü hekim onayına ve özel ziyaret saatlerine
+                    tabidir.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="faqHeading8">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq8"
+                    aria-expanded="false"
+                    aria-controls="faq8"
+                  >
+                    <i class="bi bi-p-square-fill text-primary me-3 fs-5"></i>
+                    Otopark bulunuyor mu?
+                  </button>
+                </h2>
+                <div
+                  id="faq8"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading8"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-secondary">
+                    Tüm hastanelerimizde kapalı/açık otopark ve 24 saat
+                    kesintisiz vale hizmeti mevcuttur. Acil giriş yapan veya
+                    yatan hasta yakınlarımıza otopark kullanımı ücretsizdir.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ================= CTA ================= -->
 
     <section class="cta-section">
       <div class="container">
@@ -564,95 +705,152 @@
         </div>
       </div>
     </section>
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="site-footer">
+    <footer class="bg-dark text-white pt-5 pb-4">
       <div class="container">
         <div class="row g-4">
-          <!-- MEDNOVA -->
-
-          <div class="col-lg-4">
-            <h4 class="footer-logo">MEDNOVA</h4>
-
-            <p>
-              Modern sağlık hizmetleri ve uzman kadromuzla sağlığınız için
-              yanınızdayız.
+          <div class="col-lg-3 col-md-6">
+            <h4 class="fw-bold text-primary mb-3">MEDNOVA</h4>
+            <p class="text-white-50 small leading-relaxed mb-3">
+              MedNova Sağlık Grubu, ileri tıp teknolojileri ve alanında uzman
+              hekim kadrosuyla uluslararası standartlarda, insan odaklı sağlık
+              hizmeti sunmaktadır.
             </p>
+            <div class="d-flex gap-2">
+              <a
+                href="#"
+                class="btn btn-outline-light btn-sm rounded-circle"
+                aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-outline-light btn-sm rounded-circle"
+                aria-label="Twitter"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-outline-light btn-sm rounded-circle"
+                aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-outline-light btn-sm rounded-circle"
+                aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
           </div>
 
-          <!-- KURUMSAL -->
-
-          <div class="col-6 col-lg-2">
-            <h6>Kurumsal</h6>
-
-            <ul>
-              <li>
-                <a href="hakkimizda.html"> Hakkımızda </a>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold text-white mb-3">Hızlı Bağlantılar</h5>
+            <ul class="list-unstyled text-white-50 small">
+              <li class="mb-2">
+                <a
+                  href="doktorlar.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i>
+                  Doktorlar</a
+                >
               </li>
-
-              <li>
-                <a href="doktorlar.html"> Doktorlarımız </a>
+              <li class="mb-2">
+                <a
+                  href="bolumler.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i>
+                  Bölümler</a
+                >
               </li>
-
-              <li>
-                <a href="bolumler.html"> Bölümler </a>
+              <li class="mb-2">
+                <a
+                  href="appointment.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i> Randevu
+                  Al</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="about.html" class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i>
+                  Hakkımızda</a
+                >
               </li>
             </ul>
           </div>
 
-          <!-- HİZMETLER -->
-
-          <div class="col-6 col-lg-2">
-            <h6>Hizmetler</h6>
-
-            <ul>
-              <li>
-                <a href="randevu.html"> Randevu </a>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold text-white mb-3">Hasta Hizmetleri</h5>
+            <ul class="list-unstyled text-white-50 small">
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i> Hasta
+                  Hakları</a
+                >
               </li>
-
-              <li>
-                <a href="saglik-paketleri.html"> Sağlık Paketleri </a>
+              <li class="mb-2">
+                <a
+                  href="subeler.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i> Ziyaret
+                  Saatleri</a
+                >
               </li>
-
-              <li>
-                <a href="subeler.html"> Hastanelerimiz </a>
+              <li class="mb-2">
+                <a
+                  href="packages.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i>
+                  Anlaşmalı Kurumlar</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="about.html" class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i> SSS</a
+                >
               </li>
             </ul>
           </div>
 
-          <!-- İLETİŞİM -->
-
-          <div class="col-lg-4">
-            <h6>İletişim</h6>
-
-            <p class="footer-contact">
-              <i class="bi bi-telephone"></i>
-              444 00 00
-            </p>
-
-            <p class="footer-contact">
-              <i class="bi bi-envelope"></i>
-              info@mednova.com
-            </p>
-
-            <p class="footer-contact">
-              <i class="bi bi-geo-alt"></i>
-              İstanbul, Türkiye
-            </p>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold text-white mb-3">İletişim</h5>
+            <ul class="list-unstyled text-white-50 small">
+              <li class="mb-2 d-flex align-items-center">
+                <i class="bi bi-telephone-fill me-2 text-primary"></i>
+                <span>444 0 999</span>
+              </li>
+              <li class="mb-2 d-flex align-items-center">
+                <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                <span>info@mednova.com.tr</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="bi bi-geo-alt-fill me-2 text-primary mt-1"></i>
+                <span>Barbaros Bulvarı No: 124, Beşiktaş / İstanbul</span>
+              </li>
+            </ul>
           </div>
-        </div>
-
-        <!-- ALT ÇİZGİ -->
-
-        <hr />
-
-        <!-- COPYRIGHT -->
-
-        <div class="footer-bottom">
-          <p>© 2026 MEDNOVA. Tüm hakları saklıdır.</p>
         </div>
       </div>
     </footer>
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <hr class="border-secondary my-4" />
+        <div class="row align-items-center text-white-50 small">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            &copy; 2026 MedNova Sağlık Grubu. Tüm hakları saklıdır.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-white-50 text-decoration-none me-3"
+              >Gizlilik Politikası</a
+            >
+            <a href="#" class="text-white-50 text-decoration-none"
+              >KVKK Bilgilendirme</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

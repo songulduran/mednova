@@ -1,545 +1,156 @@
 <!doctype html>
 <html lang="tr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bölüm Detayı | MEDNOVA</title>
-
-    <!-- Bootstrap CSS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kardiyoloji - MedNova</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!-- Bootstrap 5 CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
-    <!-- Kendi CSS -->
+    <!-- Özel CSS Dosyan -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
-  <body class="bg-light">
-    <!-- ================= NAVBAR ================= -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
-      <div class="container">
-        <a class="navbar-brand fw-bold fs-3 text-primary" href="index.html"
-          >MEDNOVA</a
+  <body>
+    <!-- 1. BÜYÜK BANNER ALANI (HERO SECTION) -->
+    <section
+      class="dept-detail-banner py-5 bg-dark text-white text-center position-relative"
+    >
+      <div class="container py-5 position-relative z-1">
+        <a
+          href="javascript:history.back()"
+          class="btn btn-outline-light btn-sm mb-4"
         >
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarMenu">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Ana Sayfa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="doktorlar.html">Doktorlar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="bolumler.html">Bölümler</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="saglik-paketleri.html"
-                >Sağlık Paketleri</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="subeler.html">Hastanelerimiz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="iletisim.html">İletişim</a>
-            </li>
-            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-              <a href="randevu.html" class="btn btn-primary px-4">
-                <i class="bi bi-calendar-check me-2"></i>Randevu Al
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- ================= BÜYÜK BANNER ALANI ================= -->
-    <section class="position-relative bg-dark text-white text-center py-5">
-      <img
-        id="deptBannerImg"
-        src="images/dept-kardiyoloji.jpg"
-        class="w-100 position-absolute top-0 start-0 h-100"
-        style="object-fit: cover; opacity: 0.35"
-        alt="Bölüm Banner"
-      />
-      <div class="container position-relative py-5">
-        <span
-          class="badge bg-primary fs-6 px-3 py-2 mb-3 text-uppercase tracking-wider"
-          >Tıbbi Uzmanlık Alanı</span
-        >
-        <h1 id="deptTitle" class="display-4 fw-bold">Kardiyoloji</h1>
-        <p class="lead text-white-50 mx-auto" style="max-width: 700px">
-          Kalp ve damar sağlığınız için en gelişmiş teknoloji ve uzman tıbbi
-          kadromuzla yanınızdayız.
+          <i class="bi bi-arrow-left"></i> Bütün Bölümlere Dön
+        </a>
+        <h1 class="display-4 fw-bold mb-3">Kardiyoloji</h1>
+        <p class="lead mb-0 text-white-50">
+          Kalp ve damar sağlığınız için uzman kadro ve yenilikçi tanı/tedavi
+          yöntemleri.
         </p>
       </div>
     </section>
 
-    <!-- ================= İÇERİK BÖLÜMÜ ================= -->
+    <!-- 2. İÇERİK ALANI -->
     <section class="py-5">
-      <div class="container">
-        <div class="row g-4">
-          <!-- Sol Taraf: Açıklama ve Tedavi Edilen Hastalıklar -->
+      <div class="container py-3">
+        <div class="row g-5">
+          <!-- Sol Kolon: Açıklama ve Hastalıklar -->
           <div class="col-lg-8">
-            <!-- Bölüm Açıklaması -->
-            <div class="card border-0 shadow-sm p-4 mb-4">
-              <h3 id="deptAboutTitle" class="fw-bold text-primary mb-3">
-                Kardiyoloji Nedir?
-              </h3>
-              <p
-                id="deptDescription"
-                class="text-secondary leading-relaxed fs-6"
-              >
-                Kardiyoloji, kalp ve damar sistemi hastalıklarını inceleyen,
-                teşhis ve tedavi süreçlerini yöneten tıbbi bilim dalıdır. Kalp
-                krizinden ritim bozukluklarına, hipertansiyondan damar
-                sertliğine kadar pek çok hayati rahatsızlık kardiyoloji
-                uzmanları tarafından takip ve tedavi edilmektedir.
+            <!-- Kardiyoloji Nedir? -->
+            <div class="mb-5">
+              <h2 class="fw-bold text-dark mb-3">Kardiyoloji Nedir?</h2>
+              <p class="text-secondary leading-relaxed">
+                Kardiyoloji; kalp ve dolaşım sistemi hastalıklarını inceleyen,
+                teşhis eden ve tedavi eden tıp dalıdır. Kalp sağlığı, hayati
+                fonksiyonların sürdürülebilmesi için kritik bir öneme sahiptir.
               </p>
-              <p class="text-secondary leading-relaxed fs-6 mb-0">
-                Kliniğimizde en son teknolojiye sahip tanı cihazları ile erken
-                teşhis imkanı sunulmakta, kişiye özel tedavi planlamaları
-                yapılarak yaşam kaliteniz en üst seviyede tutulmaktadır.
+              <p class="text-secondary leading-relaxed">
+                MedNova Kardiyoloji Kliniğimizde, göğüs ağrısı, nefes darlığı,
+                çarpıntı ve tansiyon düzensizlikleri gibi şikayetlerle başvuran
+                hastalarımıza; EKO (Ekokardiyografi), efor testi, Holter takibi
+                ve koroner anjiyografi gibi gelişmiş tetkiklerle en doğru tanı
+                koyulmakta ve kişiye özel tedavi planları uygulanmaktadır.
               </p>
             </div>
 
             <!-- Tedavi Edilen Hastalıklar (Bootstrap List Group) -->
-            <div class="card border-0 shadow-sm p-4">
-              <h4 class="fw-bold mb-3">
-                <i class="bi bi-patch-check-fill text-primary me-2"></i>Tedavi
-                Edilen Hastalıklar
-              </h4>
-              <p class="text-muted small mb-3">
-                Bölümümüzde tanı ve tedavisi gerçekleştirilen başlıca
-                rahatsızlıklar şunlardır:
+            <div class="mb-4">
+              <h3 class="fw-bold text-dark mb-3">Tedavi Edilen Hastalıklar</h3>
+              <p class="text-muted mb-4">
+                Kardiyoloji birimimizde tanı ve tedavisi gerçekleştirilen
+                başlıca rahatsızlıklar şunlardır:
               </p>
 
               <ul
-                id="diseaseList"
-                class="list-group list-group-flush border-top border-bottom"
+                class="list-group list-group-flush shadow-sm rounded-3 border"
               >
-                <li class="list-group-item py-3 d-flex align-items-center">
+                <li class="list-group-item p-3 d-flex align-items-center">
                   <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
-                  <span class="fw-semibold"
+                  <span class="fw-medium text-dark"
                     >Hipertansiyon (Yüksek Tansiyon)</span
                   >
                 </li>
-                <li class="list-group-item py-3 d-flex align-items-center">
+                <li class="list-group-item p-3 d-flex align-items-center">
                   <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
-                  <span class="fw-semibold">Kalp Yetmezliği</span>
+                  <span class="fw-medium text-dark">Kalp Yetmezliği</span>
                 </li>
-                <li class="list-group-item py-3 d-flex align-items-center">
+                <li class="list-group-item p-3 d-flex align-items-center">
                   <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
-                  <span class="fw-semibold">Ritim Bozukluğu (Aritmi)</span>
+                  <span class="fw-medium text-dark"
+                    >Ritim Bozukluğu (Aritmi)</span
+                  >
                 </li>
-                <li class="list-group-item py-3 d-flex align-items-center">
+                <li class="list-group-item p-3 d-flex align-items-center">
                   <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
-                  <span class="fw-semibold">Koroner Arter Hastalıkları</span>
+                  <span class="fw-medium text-dark"
+                    >Koroner Arter Hastalıkları</span
+                  >
                 </li>
-                <li class="list-group-item py-3 d-flex align-items-center">
+                <li class="list-group-item p-3 d-flex align-items-center">
                   <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
-                  <span class="fw-semibold">Kalp Kapak Hastalıkları</span>
+                  <span class="fw-medium text-dark"
+                    >Kalp Kapak Hastalıkları</span
+                  >
                 </li>
               </ul>
             </div>
           </div>
 
-          <!-- Sağ Taraf: Yan Kartlar (Hızlı Randevu & İletişim Bilgisi) -->
+          <!-- Sağ Kolon: Bilgi Kutuları & Randevu -->
           <div class="col-lg-4">
-            <!-- Hızlı Randevu Kartı -->
-            <div class="card border-0 shadow-sm p-4 mb-4 bg-primary text-white">
-              <h4 class="fw-bold mb-2">
-                <i class="bi bi-calendar-event me-2"></i>Uzmanımızla Görüşün
-              </h4>
-              <p class="small text-white-50 mb-3">
-                Bu bölümdeki uzman hekimlerimizden hemen randevu
-                oluşturabilirsiniz.
+            <!-- Randevu Al Kutusu -->
+            <div
+              class="card border-0 shadow-sm p-4 rounded-3 bg-primary text-white text-center mb-4"
+            >
+              <i class="bi bi-heart-pulse display-4 mb-3"></i>
+              <h4 class="fw-bold mb-2">Kalbinizi İhmal Etmeyin</h4>
+              <p class="small text-white-50 mb-4">
+                Kardiyoloji uzmanlarımızdan hemen randevu alarak rutin
+                kontrollerinizi yaptırabilirsiniz.
               </p>
               <a
-                href="randevu.html"
-                class="btn btn-light text-primary fw-bold w-100 py-2"
+                href="appointment.html"
+                class="btn btn-light text-primary fw-semibold w-100 py-2"
               >
-                Randevu Al <i class="bi bi-arrow-right ms-1"></i>
+                <i class="bi bi-calendar-event me-2"></i>Randevu Al
               </a>
             </div>
 
-            <!-- Bilgi / Çağrı Merkezi Kartı -->
-            <div class="card border-0 shadow-sm p-4">
-              <h5 class="fw-bold mb-3">
-                <i class="bi bi-telephone-inbound text-primary me-2"></i>Bilgi
-                mi Almak İstiyorsunuz?
+            <!-- Poliklinik Saatleri -->
+            <div class="card border-0 shadow-sm p-4 rounded-3 bg-light">
+              <h5 class="fw-bold text-dark mb-3">
+                <i class="bi bi-clock-history text-primary me-2"></i> Çalışma
+                Saatleri
               </h5>
-              <p class="text-muted small mb-3">
-                Bölümümüz ve tedavi süreçlerimiz hakkında detaylı bilgi almak
-                için bize ulaşabilirsiniz.
-              </p>
-              <div class="d-flex align-items-center gap-3">
-                <div class="bg-primary-subtle text-primary p-3 rounded-circle">
-                  <i class="bi bi-headset fs-4"></i>
-                </div>
-                <div>
-                  <small class="text-muted d-block">7/24 Çağrı Merkezi</small>
-                  <strong class="fs-5 text-dark">444 0 999</strong>
-                </div>
-              </div>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex justify-content-between py-2 border-bottom">
+                  <span class="text-muted">Hafta İçi:</span>
+                  <strong>08:30 - 17:30</strong>
+                </li>
+                <li class="d-flex justify-content-between py-2 border-bottom">
+                  <span class="text-muted">Cumartesi:</span>
+                  <strong>09:00 - 13:00</strong>
+                </li>
+                <li class="d-flex justify-content-between py-2">
+                  <span class="text-muted">Pazar:</span>
+                  <span class="badge bg-danger">Kapalı (Acil 7/24)</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="bg-dark text-white py-4 text-center">
-      <div class="container">
-        <p class="mb-0 small">
-          &copy; 2026 MedNova Sağlık Grubu. Tüm hakları saklıdır.
-        </p>
-      </div>
-    </footer>
-
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- DİNAMİK BÖLÜM YÜKLEME SCRIPT'İ -->
-    <script>
-      const departmentsData = {
-        kardiyoloji: {
-          title: "Kardiyoloji",
-          bannerImg: "images/dept-kardiyoloji.jpg",
-          aboutTitle: "Kardiyoloji Nedir?",
-          description:
-            "Kardiyoloji, kalp ve damar sistemi hastalıklarını inceleyen, teşhis ve tedavi süreçlerini yöneten tıbbi bilim dalıdır. Kalp krizinden ritim bozukluklarına, hipertansiyondan damar sertliğine kadar pek çok hayati rahatsızlık kardiyoloji uzmanları tarafından takip ve tedavi edilmektedir.",
-          diseases: [
-            "Hipertansiyon (Yüksek Tansiyon)",
-            "Kalp Yetmezliği",
-            "Ritim Bozukluğu (Aritmi)",
-            "Koroner Arter Hastalıkları",
-            "Kalp Kapak Hastalıkları",
-          ],
-        },
-        noroloji: {
-          title: "Nöroloji",
-          bannerImg: "images/dept-noroloji.jpg",
-          aboutTitle: "Nöroloji Nedir?",
-          description:
-            "Nöroloji; beyin, omurilik, periferik sinir sistemi ve kas hastalıklarını inceleyen tıbbi uzmanlık dalıdır. Beyin damar hastalıkları, migren, felç, epilepsi ve Parkinson gibi sinir sistemi hastalıklarının teşhis ve tedavisini üstlenir.",
-          diseases: [
-            "Migren ve Kronik Baş Ağrıları",
-            "Epilepsi (Sara)",
-            "Parkinson ve Alzheimer Hastalığı",
-            "Serebrovasküler Hastalıklar (İnme / Felç)",
-            "MS (Multipl Skleroz)",
-          ],
-        },
-        ortopedi: {
-          title: "Ortopedi ve Travmatoloji",
-          bannerImg: "images/dept-ortopedi.jpg",
-          aboutTitle: "Ortopedi Nedir?",
-          description:
-            "Ortopedi ve Travmatoloji, hareket sistemini oluşturan kemik, eklem, kas, tendon ve bağların hastalıkları ile travmatik yaralanmalarının tanı ve tedavisiyle ilgilenen uzmanlık alanıdır.",
-          diseases: [
-            "Eklem Protezleri (Diz ve Kalça)",
-            "Spor Yaralanmaları ve Menisküs Yırtıkları",
-            "Kemik Kırıkları ve Çıkıklar",
-            "Omurga Eğrilikleri (Skolyoz)",
-            "Karpal Tünel Sendromu",
-          ],
-        },
-      };
-
-      // URL'deki "dept" parametresini al (?dept=noroloji gibi)
-      const urlParams = new URLSearchParams(window.location.search);
-      const selectedDeptKey = urlParams.get("dept");
-
-      if (selectedDeptKey && departmentsData[selectedDeptKey]) {
-        const dept = departmentsData[selectedDeptKey];
-
-        document.getElementById("deptTitle").innerText = dept.title;
-        document.getElementById("deptBannerImg").src = dept.bannerImg;
-        document.getElementById("deptAboutTitle").innerText = dept.aboutTitle;
-        document.getElementById("deptDescription").innerText = dept.description;
-
-        // Hastalık listesini dinamik basma
-        const listContainer = document.getElementById("diseaseList");
-        listContainer.innerHTML = "";
-        dept.diseases.forEach((disease) => {
-          listContainer.innerHTML += `
-            <li class="list-group-item py-3 d-flex align-items-center">
-              <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
-              <span class="fw-semibold">${disease}</span>
-            </li>
-          `;
-        });
-      }
-    </script>
-    <!-- ================= TANI VE TEDAVİ YÖNTEMLERİ SECTION ================= -->
-    <section class="mt-5">
-      <div class="card border-0 shadow-sm p-4">
-        <h4 class="fw-bold mb-4 text-primary">
-          <i class="bi bi-activity me-2"></i>Tanı ve Tedavi Yöntemleri
-        </h4>
-        <div class="row g-3">
-          <!-- EKG -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border bg-light shadow-sm">
-              <div class="card-body p-3">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="bg-primary-subtle text-primary rounded p-2 me-2">
-                    <i class="bi bi-heart-pulse-fill fs-5"></i>
-                  </div>
-                  <h6 class="fw-bold mb-0">EKG (Elektrokardiyografi)</h6>
-                </div>
-                <p class="card-text text-secondary small mb-0">
-                  Kalbin elektriksel aktivitesini kaydederek ritim bozuklukları
-                  ve damar tıkanıklığı belirtilerini tespit etmeye yarayan hızlı
-                  ve ağrısız testtir.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Ekokardiyografi -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border bg-light shadow-sm">
-              <div class="card-body p-3">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="bg-primary-subtle text-primary rounded p-2 me-2">
-                    <i class="bi bi-soundwave fs-5"></i>
-                  </div>
-                  <h6 class="fw-bold mb-0">Ekokardiyografi (EKO)</h6>
-                </div>
-                <p class="card-text text-secondary small mb-0">
-                  Ses dalgaları (ultrason) kullanılarak kalbin yapısı, kapakçık
-                  hareketleri ve kan pompalanma gücünün detaylı olarak
-                  incelenmesi işlemidir.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Efor Testi -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border bg-light shadow-sm">
-              <div class="card-body p-3">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="bg-primary-subtle text-primary rounded p-2 me-2">
-                    <i class="bi bi-person-walking fs-5"></i>
-                  </div>
-                  <h6 class="fw-bold mb-0">Efor Testi</h6>
-                </div>
-                <p class="card-text text-secondary small mb-0">
-                  Kullanıcının yürüyüş bandında egzersiz yaptığı sırada kalbin
-                  fiziksel strese ve iş yüküne verdiği yanıtın izlendiği
-                  tetkiktir.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Holter -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border bg-light shadow-sm">
-              <div class="card-body p-3">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="bg-primary-subtle text-primary rounded p-2 me-2">
-                    <i class="bi bi-clock-history fs-5"></i>
-                  </div>
-                  <h6 class="fw-bold mb-0">Holter Monitörizasyonu</h6>
-                </div>
-                <p class="card-text text-secondary small mb-0">
-                  24-48 saat boyunca hastanın üzerindeki taşınabilir cihazla
-                  ritim ve tansiyon değerlerinin kesintisiz olarak
-                  kaydedilmesidir.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Koroner Anjiyografi -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border bg-light shadow-sm">
-              <div class="card-body p-3">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="bg-primary-subtle text-primary rounded p-2 me-2">
-                    <i class="bi bi-hospital fs-5"></i>
-                  </div>
-                  <h6 class="fw-bold mb-0">Koroner Anjiyografi</h6>
-                </div>
-                <p class="card-text text-secondary small mb-0">
-                  Kalp damarlarının kontrast madde verilerek X-ışınları altında
-                  görüntülenmesi ve darlıkların/tıkanıklıkların saptanması
-                  yöntemidir.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Kalp MR -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border bg-light shadow-sm">
-              <div class="card-body p-3">
-                <div class="d-flex align-items-center mb-2">
-                  <div class="bg-primary-subtle text-primary rounded p-2 me-2">
-                    <i class="bi bi-display fs-5"></i>
-                  </div>
-                  <h6 class="fw-bold mb-0">Kalp MR (Kardiyak MR)</h6>
-                </div>
-                <p class="card-text text-secondary small mb-0">
-                  Radyasyon içermeyen yüksek çözünürlüklü manyetik rezonans ile
-                  kalp kası dokusunun ve anatomik yapısının detaylı
-                  görüntülenmesidir.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ================= BÖLÜM DOKTORLARI SECTION ================= -->
-    <section class="mt-5">
-      <div class="card border-0 shadow-sm p-4">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <div>
-            <h4 class="fw-bold text-primary mb-1">
-              <i class="bi bi-people-fill me-2"></i>Kardiyoloji Uzmanlarımız
-            </h4>
-            <p class="text-muted small mb-0">
-              Alanında uzman kadromuz ile sağlığınız güvence altında.
-            </p>
-          </div>
-          <a
-            href="doktorlar.html"
-            class="btn btn-outline-primary btn-sm fw-semibold"
-          >
-            Tüm Doktorlar <i class="bi bi-arrow-right ms-1"></i>
-          </a>
-        </div>
-
-        <div class="row g-4">
-          <!-- Doktor 1: Ahmet Yılmaz -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border shadow-sm text-center p-3">
-              <img
-                src="images/doktor-ahmet.jpg"
-                class="rounded-circle mx-auto mb-3"
-                alt="Prof. Dr. Ahmet Yılmaz"
-                style="width: 120px; height: 120px; object-fit: cover"
-              />
-              <h5 class="fw-bold mb-1">Prof. Dr. Ahmet Yılmaz</h5>
-              <span
-                class="badge bg-primary-subtle text-primary mb-2 align-self-center"
-                >Kardiyoloji Uzmanı</span
-              >
-              <p class="text-secondary small mb-3">
-                Girişimsel Kardiyoloji ve Koroner Anjiyografi alanında 18+ yıl
-                deneyim.
-              </p>
-              <div class="mt-auto d-flex gap-2">
-                <a
-                  href="doktor-detay.html?id=ahmet"
-                  class="btn btn-outline-primary btn-sm w-100 fw-semibold"
-                >
-                  Profili İncele
-                </a>
-                <a
-                  href="randevu.html?doc=ahmet"
-                  class="btn btn-primary btn-sm w-100 fw-semibold"
-                >
-                  Randevu Al
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Doktor 2: Elif Kaya -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border shadow-sm text-center p-3">
-              <img
-                src="images/doktor-elif.jpg"
-                class="rounded-circle mx-auto mb-3"
-                alt="Doç. Dr. Elif Kaya"
-                style="width: 120px; height: 120px; object-fit: cover"
-              />
-              <h5 class="fw-bold mb-1">Doç. Dr. Elif Kaya</h5>
-              <span
-                class="badge bg-primary-subtle text-primary mb-2 align-self-center"
-                >Kardiyoloji Uzmanı</span
-              >
-              <p class="text-secondary small mb-3">
-                Ritim Bozuklukları (Aritmi) ve Kalp Pili Uygulamalarında uzman
-                hekim.
-              </p>
-              <div class="mt-auto d-flex gap-2">
-                <a
-                  href="doktor-detay.html?id=elif"
-                  class="btn btn-outline-primary btn-sm w-100 fw-semibold"
-                >
-                  Profili İncele
-                </a>
-                <a
-                  href="randevu.html?doc=elif"
-                  class="btn btn-primary btn-sm w-100 fw-semibold"
-                >
-                  Randevu Al
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Doktor 3: Mehmet Demir -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border shadow-sm text-center p-3">
-              <img
-                src="images/doktor-mehmet.jpg"
-                class="rounded-circle mx-auto mb-3"
-                alt="Uzm. Dr. Mehmet Demir"
-                style="width: 120px; height: 120px; object-fit: cover"
-              />
-              <h5 class="fw-bold mb-1">Uzm. Dr. Mehmet Demir</h5>
-              <span
-                class="badge bg-primary-subtle text-primary mb-2 align-self-center"
-                >Kardiyoloji Uzmanı</span
-              >
-              <p class="text-secondary small mb-3">
-                Hipertansiyon, Kalp Yetmezliği ve Ekokardiyografi teşhis odaklı
-                çalışmalar.
-              </p>
-              <div class="mt-auto d-flex gap-2">
-                <a
-                  href="doktor-detay.html?id=mehmet"
-                  class="btn btn-outline-primary btn-sm w-100 fw-semibold"
-                >
-                  Profili İncele
-                </a>
-                <a
-                  href="randevu.html?doc=mehmet"
-                  class="btn btn-primary btn-sm w-100 fw-semibold"
-                >
-                  Randevu Al
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

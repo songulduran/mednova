@@ -2,30 +2,31 @@
 <html lang="tr">
   <head>
     <meta charset="utf-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>Hakkımızda | MEDNOVA</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-
+    <!-- Kendi CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
-    <!-- NAVBAR BURADA -->
-
+  <body class="bg-light">
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-3" href="index.html"> MEDNOVA </a>
+        <a class="navbar-brand fw-bold fs-3 text-primary" href="index.html"
+          >MEDNOVA</a
+        >
 
         <button
           class="navbar-toggler"
@@ -35,183 +36,563 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"> Ana Sayfa </a>
+              <a class="nav-link" href="index.html">Ana Sayfa</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link active" href="hakkimizda.html"> Hakkımızda </a>
+              <a class="nav-link active" href="about.html">Hakkımızda</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="doktorlar.html"> Doktorlar </a>
+              <a class="nav-link" href="doktorlar.html">Doktorlar</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="bolumler.html"> Bölümler </a>
+              <a class="nav-link" href="bolumler.html">Bölümler</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="saglik-paketleri.html">
-                Sağlık Paketleri
-              </a>
+              <a class="nav-link" href="packages.html">Sağlık Paketleri</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="subeler.html"> Hastanelerimiz </a>
+              <a class="nav-link" href="subeler.html">Hastanelerimiz</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="iletisim.html"> İletişim </a>
+              <a class="nav-link" href="iletisim.html">İletişim</a>
             </li>
-
             <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-              <a href="randevu.html" class="btn btn-primary px-4">
-                <i class="bi bi-calendar-check me-2"></i>
-                Randevu Al
+              <a href="appointment.html" class="btn btn-primary px-4">
+                <i class="bi bi-calendar-check me-2"></i>Randevu Al
               </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="page-header">
-      <div class="container">
-        <span>Mednova </span>
-        <h1>Hakkımızda</h1>
-        <p>Sağlıkta güven,deneyim ve yenilikçi yaklaşım</p>
+
+    <!-- HERO HEADER -->
+    <section class="bg-primary text-white py-5">
+      <div class="container text-center py-2">
+        <h1 class="fw-bold display-5">Hakkımızda</h1>
+        <p class="lead mb-0 text-white-50">
+          Geleceğin sağlık teknolojilerini insan odaklı hizmet anlayışıyla
+          buluşturuyoruz.
+        </p>
       </div>
     </section>
-    <!-- ================= HAKKIMIZDA İÇERİK ================= -->
 
-    <section class="about-section">
+    <!-- BİZ KİMİZ? -->
+    <section class="py-5 bg-white">
       <div class="container">
         <div class="row align-items-center g-5">
-          <!-- GÖRSEL -->
-
           <div class="col-lg-6">
             <img
-              src="images/about.jpg"
-              alt="MEDNOVA Hastanesi"
-              class="img-fluid about-image"
+              src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80"
+              class="img-fluid rounded-4 shadow-sm"
+              alt="Mednova Binası"
             />
           </div>
-
-          <!-- YAZILAR -->
-
           <div class="col-lg-6">
-            <span class="section-label"> BİZ KİMİZ? </span>
-
-            <h2>Sağlığınız için güvenilir ve modern çözümler</h2>
-
-            <p>
-              MEDNOVA, modern sağlık hizmetlerini uzman kadrosu ve hasta odaklı
-              yaklaşımıyla bir araya getiren yenilikçi bir sağlık kuruluşudur.
+            <span
+              class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2 rounded-pill mb-2"
+              >Sağlıkta Sağlam Adımlar</span
+            >
+            <h2 class="fw-bold text-dark mb-3">Biz Kimiz?</h2>
+            <p class="text-secondary leading-relaxed">
+              http://googleusercontent.com/map_location_reference/1
+              [Mednova](http://googleusercontent.com/map_location_reference/0)
+              Sağlık Grubu olarak, kuruluşumuzdan bu yana hastalarımıza
+              uluslararası standartlarda, etik ve güvenilir tıbbi hizmetler
+              sunmayı temel ilke edindik.
             </p>
-
-            <p>
-              Amacımız, gelişen teknolojileri takip ederek hastalarımıza
-              güvenilir, kaliteli ve ulaşılabilir sağlık hizmetleri sunmaktır.
+            <p class="text-secondary leading-relaxed">
+              Tam donanımlı hastanelerimiz, alanında uzman akademisyen hekim
+              kadromuz ve en son tıbbi teknolojilerimizle her yıl yüz binlerce
+              hastamızın şifaya kavuşmasına rehberlik ediyoruz.
             </p>
-
-            <a href="iletisim.html" class="btn btn-primary">
-              Bizimle İletişime Geç
-            </a>
+            <div class="row pt-3 text-center g-3">
+              <div class="col-4">
+                <h3 class="fw-bold text-primary mb-0">15+</h3>
+                <small class="text-muted">Yıllık Tecrübe</small>
+              </div>
+              <div class="col-4">
+                <h3 class="fw-bold text-primary mb-0">200+</h3>
+                <small class="text-muted">Uzman Hekim</small>
+              </div>
+              <div class="col-4">
+                <h3 class="fw-bold text-primary mb-0">4</h3>
+                <small class="text-muted">Modern Hastane</small>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ================= DEĞERLERİMİZ ================= -->
 
-    <section class="about-values">
+    <!-- MİSYON & VİZYON -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Misyonumuz -->
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100 p-4 rounded-4">
+              <div class="d-flex align-items-center mb-3">
+                <div
+                  class="bg-primary-subtle text-primary p-3 rounded-circle me-3"
+                >
+                  <i class="bi bi-bullseye fs-3"></i>
+                </div>
+                <h3 class="fw-bold mb-0 text-dark">Misyonumuz</h3>
+              </div>
+              <p class="text-secondary mb-0 leading-relaxed">
+                Toplumun her kesimine nitelikli, güvenilir, hızlı ve hasta
+                haklarına saygılı teşhis ve tedavi hizmeti sunmak. Tıp
+                bilimindeki gelişmeleri yakından takip ederek hasta
+                memnuniyetini en üst düzeyde tutmak.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vizyonumuz -->
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100 p-4 rounded-4">
+              <div class="d-flex align-items-center mb-3">
+                <div
+                  class="bg-primary-subtle text-primary p-3 rounded-circle me-3"
+                >
+                  <i class="bi bi-eye-fill fs-3"></i>
+                </div>
+                <h3 class="fw-bold mb-0 text-dark">Vizyonumuz</h3>
+              </div>
+              <p class="text-secondary mb-0 leading-relaxed">
+                Yenilikçi tedavi yaklaşımları, koruyucu sağlık hizmetleri ve
+                uluslararası akreditasyon kalitesi ile Türkiye'de ve bölgede
+                öncü, dünya standartlarında tercih edilen bir sağlık kuruluşu
+                olmak.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEĞERLERİMİZ -->
+    <section class="py-5 bg-white">
       <div class="container">
         <div class="text-center mb-5">
-          <span class="section-label"> NEDEN MEDNOVA? </span>
-
-          <h2>Sağlıkta Fark Yaratan Değerlerimiz</h2>
-
-          <p>
-            Hastalarımıza kaliteli ve güvenilir sağlık hizmeti sunmak için
-            çalışıyoruz.
+          <span
+            class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2 rounded-pill mb-2"
+            >İlkelerimiz</span
+          >
+          <h2 class="fw-bold text-dark">Temel Değerlerimiz</h2>
+          <p class="text-muted">
+            Hizmet kalitemizi ve çalışma kültürümüzü şekillendiren vazgeçilmez
+            değerlerimiz.
           </p>
         </div>
 
         <div class="row g-4">
-          <!-- KART 1 -->
-
-          <div class="col-md-4">
-            <div class="value-card">
-              <i class="bi bi-award"></i>
-
-              <h4>Deneyim</h4>
-
-              <p>
-                Alanında deneyimli sağlık profesyonellerimizle hastalarımıza
-                güvenilir hizmet sunuyoruz.
+          <!-- Değer 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 border rounded-4 text-center h-100 shadow-sm">
+              <i
+                class="bi bi-heart-pulse-fill text-primary display-5 mb-3 d-inline-block"
+              ></i>
+              <h5 class="fw-bold text-dark mb-2">İnsan Odaklılık</h5>
+              <p class="text-secondary small mb-0">
+                Tüm süreçlerimizde hasta konforunu, güvenliğini ve memnuniyetini
+                merkeze alırız.
               </p>
             </div>
           </div>
 
-          <!-- KART 2 -->
-
-          <div class="col-md-4">
-            <div class="value-card">
-              <i class="bi bi-people"></i>
-
-              <h4>Uzman Kadro</h4>
-
-              <p>
-                Farklı uzmanlık alanlarında deneyimli doktorlarımız ve sağlık
-                çalışanlarımızla yanınızdayız.
+          <!-- Değer 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 border rounded-4 text-center h-100 shadow-sm">
+              <i
+                class="bi bi-shield-check text-primary display-5 mb-3 d-inline-block"
+              ></i>
+              <h5 class="fw-bold text-dark mb-2">Etik ve Güvenilirlik</h5>
+              <p class="text-secondary small mb-0">
+                Tıbbi etik ilkelere sıkı sıkıya bağlı kalır, şeffaf ve dürüst
+                sağlık hizmeti sunarız.
               </p>
             </div>
           </div>
 
-          <!-- KART 3 -->
+          <!-- Değer 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 border rounded-4 text-center h-100 shadow-sm">
+              <i
+                class="bi bi-award-fill text-primary display-5 mb-3 d-inline-block"
+              ></i>
+              <h5 class="fw-bold text-dark mb-2">Mükemmeliyetçilik</h5>
+              <p class="text-secondary small mb-0">
+                Teşhis ve tedavi standartlarımızı sürekli geliştirerek kaliteden
+                ödün vermeyiz.
+              </p>
+            </div>
+          </div>
 
-          <div class="col-md-4">
-            <div class="value-card">
-              <i class="bi bi-cpu"></i>
-
-              <h4>Modern Teknoloji</h4>
-
-              <p>
-                Sağlık teknolojilerindeki gelişmeleri takip ederek modern
-                çözümler sunuyoruz.
+          <!-- Değer 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 border rounded-4 text-center h-100 shadow-sm">
+              <i
+                class="bi bi-cpu-fill text-primary display-5 mb-3 d-inline-block"
+              ></i>
+              <h5 class="fw-bold text-dark mb-2">Yenilikçilik</h5>
+              <p class="text-secondary small mb-0">
+                Sağlık teknolojilerindeki en son yenilikleri hastanelerimize
+                entegre ederiz.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ================= CTA ================= -->
-
-    <section class="about-cta">
+    <!-- ================= ZAMAN ÇİZELGESİ (TIMELINE SECTION) ================= -->
+    <section class="py-5 bg-light">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-8">
-            <span> SAĞLIĞINIZI ÖNEMSİYORUZ </span>
+        <div class="text-center mb-5">
+          <span
+            class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2 rounded-pill mb-2"
+            >Başarı Yolculuğumuz</span
+          >
+          <h2 class="fw-bold text-dark">Hastane Zaman Çizelgesi</h2>
+          <p class="text-muted">
+            Kuruluşumuzdan bu yana büyüyen hizmet ağımızın öne çıkan kilometre
+            taşları.
+          </p>
+        </div>
 
-            <h2>Sağlığınız için doğru adımı birlikte atalım.</h2>
-
-            <p>
-              Uzman doktorlarımızdan randevu almak için hemen bizimle iletişime
-              geçebilirsiniz.
-            </p>
+        <!-- TIMELINE WRAPPER -->
+        <div class="timeline">
+          <!-- 2007 -->
+          <div class="timeline-item left">
+            <div class="timeline-content card border-0 shadow-sm p-4">
+              <span
+                class="badge bg-primary fs-6 px-3 py-2 mb-2 w-auto align-self-start"
+                >2007</span
+              >
+              <h5 class="fw-bold text-dark">İkinci Hastane Açıldı</h5>
+              <p class="text-secondary small mb-0">
+                Hizmet ağımızı genişleterek ikinci tam donanımlı hastane
+                yerleşkemizi faaliyete geçirdik.
+              </p>
+            </div>
           </div>
 
-          <div class="col-lg-4 text-lg-end">
-            <a href="randevu.html" class="btn btn-light btn-lg"> Randevu Al </a>
+          <!-- 2014 -->
+          <div class="timeline-item right">
+            <div class="timeline-content card border-0 shadow-sm p-4">
+              <span
+                class="badge bg-primary fs-6 px-3 py-2 mb-2 w-auto align-self-start"
+                >2014</span
+              >
+              <h5 class="fw-bold text-dark">100 Doktor Sınırı Geçildi</h5>
+              <p class="text-secondary small mb-0">
+                Kadro kalitemizi ve kapasitemizi arttırarak bünyemizdeki uzman
+                hekim sayısını 100'ün üzerine çıkardık.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2020 -->
+          <div class="timeline-item left">
+            <div class="timeline-content card border-0 shadow-sm p-4">
+              <span
+                class="badge bg-primary fs-6 px-3 py-2 mb-2 w-auto align-self-start"
+                >2020</span
+              >
+              <h5 class="fw-bold text-dark">Dijital Sağlık Merkezi Açıldı</h5>
+              <p class="text-secondary small mb-0">
+                Online randevu, tele-sağlık ve dijital hasta takip altyapısını
+                kurarak yenilikçi sağlık hizmetine adım attık.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2026 -->
+          <div class="timeline-item right">
+            <div class="timeline-content card border-0 shadow-sm p-4">
+              <span
+                class="badge bg-primary fs-6 px-3 py-2 mb-2 w-auto align-self-start"
+                >2026</span
+              >
+              <h5 class="fw-bold text-dark">4 Şehirde Hizmet</h5>
+              <p class="text-secondary small mb-0">
+                İstanbul, Ankara, İzmir ve Bursa lokasyonlarımızla Türkiye
+                genelinde sağlık standartlarını yükseltmeye devam ediyoruz.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- İÇERİK BURAYA GELECEK -->
+    <!-- ================= YÖNETİM KADROSU SECTION ================= -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span
+            class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2 rounded-pill mb-2"
+            >Liderlerimiz</span
+          >
+          <h2 class="fw-bold text-dark">Yönetim Kadromuz</h2>
+          <p class="text-muted">
+            Sağlıkta mükemmellik vizyonumuza yön veren deneyimli yönetici
+            kadromuz.
+          </p>
+        </div>
 
-    <!-- BOOTSTRAP JS -->
+        <div class="row g-4">
+          <!-- Yönetici 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top object-fit-cover"
+                alt="Dr. Mehmet Yılmaz"
+                style="height: 260px"
+              />
+              <div class="card-body p-4">
+                <h5 class="fw-bold text-dark mb-1">Dr. Mehmet Yılmaz</h5>
+                <p class="text-primary fw-semibold small mb-3">
+                  Yönetim Kurulu Başkanı
+                </p>
+                <p class="text-muted small mb-0">
+                  30 yılı aşkın sağlık yönetimi tecrübesiyle MedNova'nın
+                  stratejik büyümesine liderlik etmektedir.
+                </p>
+              </div>
+            </div>
+          </div>
 
+          <!-- Yönetici 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1594824813566-78a13524b179?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top object-fit-cover"
+                alt="Prof. Dr. Ayşe Kaya"
+                style="height: 260px"
+              />
+              <div class="card-body p-4">
+                <h5 class="fw-bold text-dark mb-1">Prof. Dr. Ayşe Kaya</h5>
+                <p class="text-primary fw-semibold small mb-3">
+                  Medikal Direktör (CMO)
+                </p>
+                <p class="text-muted small mb-0">
+                  Tıbbi hizmetlerin kalitesi, akademik kadro yönetimi ve hasta
+                  güvenliği süreçlerini yürütmektedir.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Yönetici 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top object-fit-cover"
+                alt="Caner Demir"
+                style="height: 260px"
+              />
+              <div class="card-body p-4">
+                <h5 class="fw-bold text-dark mb-1">Caner Demir</h5>
+                <p class="text-primary fw-semibold small mb-3">
+                  Genel Müdürü (CEO)
+                </p>
+                <p class="text-muted small mb-0">
+                  Operasyonel mükemmellik ve dijital sağlık dönüşümü
+                  stratejilerinden sorumludur.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Yönetici 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top object-fit-cover"
+                alt="Zeynep Arslan"
+                style="height: 260px"
+              />
+              <div class="card-body p-4">
+                <h5 class="fw-bold text-dark mb-1">Zeynep Arslan</h5>
+                <p class="text-primary fw-semibold small mb-3">
+                  Mali İşler Direktörü (CFO)
+                </p>
+                <p class="text-muted small mb-0">
+                  Hastanelerimizin finansal sürdürülebilirliği ve yatırım
+                  planlamalarını yönetmektedir.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= FOOTER SECTION ================= -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <!-- 1. SÜTUN: MEDNOVA HAKKINDA -->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="fw-bold text-primary mb-3">MEDNOVA</h4>
+            <p class="text-white-50 small leading-relaxed mb-3">
+              MedNova Sağlık Grubu, ileri tıp teknolojileri ve alanında uzman
+              hekim kadrosuyla uluslararası standartlarda, insan odaklı sağlık
+              hizmeti sunmaktadır.
+            </p>
+            <div class="d-flex gap-2">
+              <a
+                href="#"
+                class="btn btn-outline-light btn-sm rounded-circle"
+                aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-outline-light btn-sm rounded-circle"
+                aria-label="Twitter"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-outline-light btn-sm rounded-circle"
+                aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-outline-light btn-sm rounded-circle"
+                aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- 2. SÜTUN: HIZLI BAĞLANTILAR -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold text-white mb-3">Hızlı Bağlantılar</h5>
+            <ul class="list-unstyled text-white-50 small">
+              <li class="mb-2">
+                <a
+                  href="doktorlar.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i>
+                  Doktorlar</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="bolumler.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i>
+                  Bölümler</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="appointment.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i> Randevu
+                  Al</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="about.html" class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i>
+                  Hakkımızda</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- 3. SÜTUN: HASTA HİZMETLERİ -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold text-white mb-3">Hasta Hizmetleri</h5>
+            <ul class="list-unstyled text-white-50 small">
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i> Hasta
+                  Hakları</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="subeler.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i> Ziyaret
+                  Saatleri</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="packages.html"
+                  class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i>
+                  Anlaşmalı Kurumlar</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="about.html" class="text-white-50 text-decoration-none"
+                  ><i class="bi bi-chevron-right me-1 text-primary"></i> SSS</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- 4. SÜTUN: İLETİŞİM BİLGİLERİ -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold text-white mb-3">İletişim</h5>
+            <ul class="list-unstyled text-white-50 small">
+              <li class="mb-2 d-flex align-items-center">
+                <i class="bi bi-telephone-fill me-2 text-primary"></i>
+                <span>444 0 999</span>
+              </li>
+              <li class="mb-2 d-flex align-items-center">
+                <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                <span>info@mednova.com.tr</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="bi bi-geo-alt-fill me-2 text-primary mt-1"></i>
+                <span>Barbaros Bulvarı No: 124, Beşiktaş / İstanbul</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ALT BİLGİ & TELİF HAKKI -->
+        <hr class="border-secondary my-4" />
+        <div class="row align-items-center text-white-50 small">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            &copy; 2026 MedNova Sağlık Grubu. Tüm hakları saklıdır.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-white-50 text-decoration-none me-3"
+              >Gizlilik Politikası</a
+            >
+            <a href="#" class="text-white-50 text-decoration-none"
+              >KVKK Bilgilendirme</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
