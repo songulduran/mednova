@@ -68,6 +68,12 @@ img {
   background-color: #16324f;
   border-color: #16324f;
 }
+.navbar-nav .nav-link {
+  white-space: nowrap;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  font-size: 15px;
+}
 /* hero section */
 .hero-section {
   background-color: #f5f9fb;
@@ -963,6 +969,9 @@ img {
   line-height: 1.5;
   flex-grow: 1;
   margin-bottom: 20px;
+}
+.dept-card .btn-detail {
+  margin-top: auto;
 }
 .btn-detail {
   display: inline-flex;

@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kardiyoloji Bölümü | MEDNOVA</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Özel CSS Dosyamız -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-light">
+    <!-- HERO / BÖLÜM BAŞLIĞI -->
+    <section class="bg-primary text-white py-5">
+      <div class="container py-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-3">
+            <li class="breadcrumb-item">
+              <a href="bolumler.html" class="text-white-50 text-decoration-none"
+                >Bölümlerimiz</a
+              >
+            </li>
+            <li class="breadcrumb-item active text-white" aria-current="page">
+              Kardiyoloji
+            </li>
+          </ol>
+        </nav>
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h1 class="fw-bold display-4 mb-3">Kardiyoloji Bölümü</h1>
+            <p class="lead text-white-50 mb-0">
+              Kalp ve damar sağlığınızı korumak, erken teşhis ve en ileri
+              teknolojik imkanlarla tedavi etmek için 7/24 hizmetinizdeyiz.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+            <a
+              href="#appointment-modal"
+              class="btn btn-light btn-lg fw-semibold text-primary shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#appointmentModal"
+            >
+              <i class="bi bi-calendar-plus me-2"></i>Randevu Al
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- İÇERİK & YAN MENÜ -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- SOL KOLON: Bölüm Detayları & Doktorlar -->
+          <div class="col-lg-8">
+            <!-- Bölüm Hakkında -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-3 text-primary">Bölüm Hakkında</h4>
+                <p class="text-secondary">
+                  MEDNOVA Kardiyoloji Bölümü; koroner arter hastalığı, kalp
+                  kapak hastalıkları, kalp yetmezliği ve ritim bozuklukları
+                  (aritmi) gibi geniş bir yelpazede tanı ve tedavi hizmeti
+                  sunmaktadır.
+                </p>
+                <p class="text-secondary mb-0">
+                  Poliklinik hizmetlerimizin yanı sıra, tam donanımlı Anjiyo
+                  Laboratuvarımız ve Kardiyak Yoğun Bakım Ünitemiz ile acil
+                  durumlarda da kesintisiz sağlık hizmeti vermekteyiz.
+                </p>
+              </div>
+            </div>
+
+            <!-- Sunduğumuz Hizmetler Grid -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-4 text-primary">
+                  Teşhis ve Tedavi Yöntemleri
+                </h4>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div
+                      class="d-flex align-items-center p-3 border rounded bg-light"
+                    >
+                      <div
+                        class="feature-icon bg-primary text-white rounded me-3"
+                      >
+                        <i class="bi bi-activity"></i>
+                      </div>
+                      <div>
+                        <h6 class="fw-bold mb-1">EKG & Efor Testi</h6>
+                        <small class="text-secondary"
+                          >Kalp ritmi ve damar darlıklarının tespiti.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="d-flex align-items-center p-3 border rounded bg-light"
+                    >
+                      <div
+                        class="feature-icon bg-primary text-white rounded me-3"
+                      >
+                        <i class="bi bi-heart-pulse"></i>
+                      </div>
+                      <div>
+                        <h6 class="fw-bold mb-1">Ekokardiyografi (EKO)</h6>
+                        <small class="text-secondary"
+                          >Ultrason ile kalp yapısının incelenmesi.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="d-flex align-items-center p-3 border rounded bg-light"
+                    >
+                      <div
+                        class="feature-icon bg-primary text-white rounded me-3"
+                      >
+                        <i class="bi bi-segmented-nav"></i>
+                      </div>
+                      <div>
+                        <h6 class="fw-bold mb-1">Koroner Anjiyografi</h6>
+                        <small class="text-secondary"
+                          >Damar tıkanıklıklarının tespiti ve açılması.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="d-flex align-items-center p-3 border rounded bg-light"
+                    >
+                      <div
+                        class="feature-icon bg-primary text-white rounded me-3"
+                      >
+                        <i class="bi bi-clock-history"></i>
+                      </div>
+                      <div>
+                        <h6 class="fw-bold mb-1">Ritim & Tansiyon Holter</h6>
+                        <small class="text-secondary"
+                          >24-48 saatlik kesintisiz kalp takibi.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bölüm Doktorları -->
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-4 text-primary">Uzman Hekimlerimiz</h4>
+                <div class="row g-4">
+                  <!-- Doktor 1 -->
+                  <div class="col-md-6">
+                    <div
+                      class="border rounded p-3 text-center bg-white h-100 d-flex flex-column align-items-center"
+                    >
+                      <img
+                        src="images/doctor-1.jpg"
+                        alt="Prof. Dr. Ahmet Yılmaz"
+                        class="rounded-circle mb-3"
+                        style="width: 120px; height: 120px; object-fit: cover"
+                      />
+                      <h6 class="fw-bold mb-1">Prof. Dr. Ahmet Yılmaz</h6>
+                      <span class="badge bg-primary-subtle text-primary mb-2"
+                        >Kardiyoloji Uzmanı</span
+                      >
+                      <p class="small text-secondary flex-grow-1">
+                        Girişimsel Kardiyoloji ve Koroner Anjiyografi alanında
+                        20+ yıl deneyim.
+                      </p>
+                      <button
+                        class="btn btn-sm btn-outline-primary w-100 fw-semibold mt-2"
+                      >
+                        Randevu Al
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Doktor 2 -->
+                  <div class="col-md-6">
+                    <div
+                      class="border rounded p-3 text-center bg-white h-100 d-flex flex-column align-items-center"
+                    >
+                      <img
+                        src="images/doctor-2.jpg"
+                        alt="Doç. Dr. Ayşe Kaya"
+                        class="rounded-circle mb-3"
+                        style="width: 120px; height: 120px; object-fit: cover"
+                      />
+                      <h6 class="fw-bold mb-1">Doç. Dr. Ayşe Kaya</h6>
+                      <span class="badge bg-primary-subtle text-primary mb-2"
+                        >Kardiyoloji Uzmanı</span
+                      >
+                      <p class="small text-secondary flex-grow-1">
+                        Kalp Yetersizliği, Hipertansiyon ve Ekokardiyografi
+                        uzmanı.
+                      </p>
+                      <button
+                        class="btn btn-sm btn-outline-primary w-100 fw-semibold mt-2"
+                      >
+                        Randevu Al
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAĞ KOLON: Bilgi & İletişim Kartları -->
+          <div class="col-lg-4">
+            <!-- Çalışma Saatleri -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-3">
+                  <i class="bi bi-clock me-2 text-primary"></i>Poliklinik
+                  Saatleri
+                </h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="d-flex justify-content-between py-2 border-bottom">
+                    <span class="text-secondary">Pazartesi - Cuma</span>
+                    <span class="fw-semibold">08:30 - 17:30</span>
+                  </li>
+                  <li class="d-flex justify-content-between py-2 border-bottom">
+                    <span class="text-secondary">Cumartesi</span>
+                    <span class="fw-semibold">09:00 - 13:00</span>
+                  </li>
+                  <li class="d-flex justify-content-between py-2">
+                    <span class="text-secondary">Pazar</span>
+                    <span class="badge bg-danger-subtle text-danger"
+                      >Kapalı (Acil Açık)</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Acil Çağrı Kartı -->
+            <div class="card border-0 shadow-sm bg-primary text-white">
+              <div class="card-body p-4 text-center">
+                <i class="bi bi-telephone-inbound display-4 mb-3 d-block"></i>
+                <h5 class="fw-bold">Acil Kardiyoloji Destek</h5>
+                <p class="small text-white-50">
+                  7/24 kesintisiz acil servis ve kardiyak müdahale ekibimiz
+                  görev başındadır.
+                </p>
+                <a
+                  href="tel:4440000"
+                  class="btn btn-light text-primary fw-bold w-100 mt-2"
+                >
+                  <i class="bi bi-telephone-fill me-2"></i>444 0 000
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIZLI RANDEVU MODALI -->
+    <div
+      class="modal fade"
+      id="appointmentModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title fw-bold">Kardiyoloji Randevusu</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <form>
+              <div class="mb-3">
+                <label class="form-label small fw-semibold"
+                  >Adınız Soyadınız</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Örn: Ahmet Yılmaz"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label small fw-semibold"
+                  >Telefon Numarası</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="05XX XXX XX XX"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label small fw-semibold"
+                  >Doktor Seçimi</label
+                >
+                <select class="form-select">
+                  <option selected>Fark etmez / İlk uygun doktor</option>
+                  <option>Prof. Dr. Ahmet Yılmaz</option>
+                  <option>Doç. Dr. Ayşe Kaya</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 fw-semibold">
+                Randevu Talebi Gönder
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
