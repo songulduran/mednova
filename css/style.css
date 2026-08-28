@@ -359,9 +359,7 @@ img {
   background-color: #16324f;
   border-color: #16324f;
 }
-/* =========================
-   SAĞLIK PAKETLERİ
-========================= */
+/* sağlık paketleri */
 
 .packages-section {
   background-color: #f5f9fb;
@@ -417,9 +415,7 @@ img {
 .package-card a:hover {
   color: #16324f;
 }
-/* =========================
-   SSS
-========================= */
+/* faq */
 
 .faq-section {
   background-color: #ffffff;
@@ -459,9 +455,7 @@ img {
   line-height: 1.7;
   padding: 20px;
 }
-/* =========================
-   CTA
-========================= */
+/* cta */
 
 .cta-section {
   padding: 70px 0;
@@ -496,9 +490,7 @@ img {
   background-color: #16324f;
   color: #ffffff;
 }
-/* =========================
-   FOOTER
-========================= */
+/* footer */
 
 .site-footer {
   padding: 60px 0 25px;
@@ -564,9 +556,7 @@ img {
   margin: 0;
   font-size: 14px;
 }
-/* =========================
-   SAYFA BAŞLIĞI
-========================= */
+/* sayfa header */
 
 .page-header {
   padding: 80px 0;
@@ -594,9 +584,7 @@ img {
   color: #6b7280;
   font-size: 17px;
 }
-/* =========================
-   HAKKIMIZDA İÇERİK
-========================= */
+/* hakkımızda section */
 
 .about-section {
   padding: 90px 0;
@@ -628,9 +616,6 @@ img {
   line-height: 1.8;
   margin-bottom: 15px;
 }
-/* =========================
-   DEĞERLERİMİZ
-========================= */
 
 .about-values {
   padding: 90px 0;
@@ -679,9 +664,7 @@ img {
   line-height: 1.7;
   margin-bottom: 0;
 }
-/* =========================
-   HAKKIMIZDA CTA
-========================= */
+/* hakkımızda cta */
 
 .about-cta {
   padding: 70px 0;
@@ -710,10 +693,8 @@ img {
 .about-cta .btn {
   padding: 12px 30px;
 }
-/* =========================
-   DOKTORLAR SAYFASI
-========================= */
 
+/* doktor section */
 .doctors-section {
   padding: 90px 0;
   background-color: #f5f9fb;
@@ -764,9 +745,7 @@ img {
   color: #6b7280;
   margin-bottom: 20px;
 }
-/* =========================
-   DOKTOR FİLTRELEME
-========================= */
+/* doktor filter */
 
 .doctor-filter {
   background-color: #f5f9fb;
@@ -789,9 +768,7 @@ img {
   min-height: 48px;
   border-radius: 10px;
 }
-/* =========================
-   DOKTOR DETAY
-========================= */
+/* doktor detay */
 
 .doctor-detail-section {
   background-color: #ffffff;
