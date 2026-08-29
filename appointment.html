@@ -80,163 +80,152 @@
         <div class="row justify-content-center">
           <div class="col-lg-9">
             <div class="card border-0 shadow-sm p-4 p-md-5">
-              <form
-                onsubmit="
-                  event.preventDefault();
-                  alert(
-                    'Randevunuz başarıyla oluşturulmuştur! En kısa sürede sizinle iletişime geçilecektir.',
-                  );
-                "
-              >
-                <!-- HASTA BİLGİLERİ -->
-                <h5 class="fw-bold text-primary mb-3">
-                  <i class="bi bi-person-fill me-2"></i>Hasta Bilgileri
-                </h5>
-                <div class="row g-3 mb-4">
-                  <div class="col-md-6">
-                    <label class="form-label fw-semibold">Ad</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Adınız"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label fw-semibold">Soyad</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Soyadınız"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label fw-semibold">Telefon</label>
-                    <input
-                      type="tel"
-                      class="form-control"
-                      placeholder="05XX XXX XX XX"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label fw-semibold">E-posta</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="ornek@email.com"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <hr class="my-4" />
-
-                <!-- RANDEVU BİLGİLERİ -->
-                <h5 class="fw-bold text-primary mb-3">
-                  <i class="bi bi-hospital me-2"></i>Randevu Bilgileri
-                </h5>
-                <div class="row g-3 mb-4">
-                  <div class="col-md-6">
-                    <label class="form-label fw-semibold">Şehir</label>
-                    <select class="form-select" required>
-                      <option value="" selected disabled>Şehir Seçiniz</option>
-                      <option>İstanbul</option>
-                      <option>Ankara</option>
-                      <option>İzmir</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label fw-semibold">Hastane / Şube</label>
-                    <select class="form-select" required>
-                      <option value="" selected disabled>
-                        Hastane Seçiniz
-                      </option>
-                      <option>MedNova Kadıköy Hastanesi</option>
-                      <option>MedNova Nişantaşı Hastanesi</option>
-                      <option>MedNova Çankaya Hastanesi</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label fw-semibold">Bölüm</label>
-                    <select class="form-select" required>
-                      <option value="" selected disabled>Bölüm Seçiniz</option>
-                      <option>Kardiyoloji</option>
-                      <option>Nöroloji</option>
-                      <option>Ortopedi</option>
-                      <option>Dermatoloji</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label fw-semibold">Doktor</label>
-                    <select class="form-select" required>
-                      <option value="" selected disabled>Doktor Seçiniz</option>
-                      <option>Prof. Dr. Ahmet Yılmaz</option>
-                      <option>Doç. Dr. Elif Kaya</option>
-                      <option>Uzm. Dr. Mehmet Demir</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label fw-semibold">Tarih</label>
-                    <input type="date" class="form-control" required />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label fw-semibold">Saat</label>
-                    <select class="form-select" required>
-                      <option value="" selected disabled>Saat Seçiniz</option>
-                      <option>09:00</option>
-                      <option>09:30</option>
-                      <option>10:00</option>
-                      <option>10:30</option>
-                      <option>11:00</option>
-                      <option>11:30</option>
-                    </select>
-                  </div>
-                </div>
-
-                <hr class="my-4" />
-
-                <h5 class="fw-bold text-primary mb-3">
-                  <i class="bi bi-chat-left-text me-2"></i>Ek Bilgiler
-                </h5>
-                <div class="mb-4">
-                  <label class="form-label fw-semibold"
-                    >Şikayetiniz / Notunuz</label
-                  >
-                  <textarea
-                    class="form-control"
-                    rows="3"
-                    placeholder="Varsa mevcutta yaşadığınız şikayetleri veya iletmek istediğiniz notları kısaca yazabilirsiniz..."
-                  ></textarea>
-                </div>
-                <!-- sözleşme btn -->
-                <div class="form-check mb-4">
+              <!-- HASTA BİLGİLERİ -->
+              <h5 class="fw-bold text-primary mb-3">
+                <i class="bi bi-person-fill me-2"></i>Hasta Bilgileri
+              </h5>
+              <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Ad</label>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="kvkkCheck"
+                    type="text"
+                    class="form-control"
+                    placeholder="Adınız"
                     required
                   />
-                  <label
-                    class="form-check-label text-muted small"
-                    for="kvkkCheck"
-                  >
-                    <a
-                      href="#"
-                      class="text-primary text-decoration-none fw-semibold"
-                      >KVKK Aydınlatma Metni</a
-                    >'ni okudum, kişisel verilerimin işlenmesini onaylıyorum.
-                  </label>
                 </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Soyad</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Soyadınız"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Telefon</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="05XX XXX XX XX"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">E-posta</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="ornek@email.com"
+                    required
+                  />
+                </div>
+              </div>
 
-                <button
-                  type="submit"
-                  class="btn btn-primary w-100 py-3 fw-bold fs-5"
+              <hr class="my-4" />
+
+              <!-- RANDEVU BİLGİLERİ -->
+              <h5 class="fw-bold text-primary mb-3">
+                <i class="bi bi-hospital me-2"></i>Randevu Bilgileri
+              </h5>
+              <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Şehir</label>
+                  <select class="form-select" required>
+                    <option value="" selected disabled>Şehir Seçiniz</option>
+                    <option>İstanbul</option>
+                    <option>Ankara</option>
+                    <option>İzmir</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Hastane / Şube</label>
+                  <select class="form-select" required>
+                    <option value="" selected disabled>Hastane Seçiniz</option>
+                    <option>MedNova Kadıköy Hastanesi</option>
+                    <option>MedNova Nişantaşı Hastanesi</option>
+                    <option>MedNova Çankaya Hastanesi</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Bölüm</label>
+                  <select class="form-select" required>
+                    <option value="" selected disabled>Bölüm Seçiniz</option>
+                    <option>Kardiyoloji</option>
+                    <option>Nöroloji</option>
+                    <option>Ortopedi</option>
+                    <option>Dermatoloji</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Doktor</label>
+                  <select class="form-select" required>
+                    <option value="" selected disabled>Doktor Seçiniz</option>
+                    <option>Prof. Dr. Ahmet Yılmaz</option>
+                    <option>Doç. Dr. Elif Kaya</option>
+                    <option>Uzm. Dr. Mehmet Demir</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Tarih</label>
+                  <input type="date" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Saat</label>
+                  <select class="form-select" required>
+                    <option value="" selected disabled>Saat Seçiniz</option>
+                    <option>09:00</option>
+                    <option>09:30</option>
+                    <option>10:00</option>
+                    <option>10:30</option>
+                    <option>11:00</option>
+                    <option>11:30</option>
+                  </select>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <h5 class="fw-bold text-primary mb-3">
+                <i class="bi bi-chat-left-text me-2"></i>Ek Bilgiler
+              </h5>
+              <div class="mb-4">
+                <label class="form-label fw-semibold"
+                  >Şikayetiniz / Notunuz</label
                 >
-                  <i class="bi bi-check-circle-fill me-2"></i>Randevu Oluştur
-                </button>
-              </form>
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  placeholder="Varsa mevcutta yaşadığınız şikayetleri veya iletmek istediğiniz notları kısaca yazabilirsiniz..."
+                ></textarea>
+              </div>
+              <!-- sözleşme btn -->
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="kvkkCheck"
+                  required
+                />
+                <label
+                  class="form-check-label text-muted small"
+                  for="kvkkCheck"
+                >
+                  <a
+                    href="#"
+                    class="text-primary text-decoration-none fw-semibold"
+                    >KVKK Aydınlatma Metni</a
+                  >'ni okudum, kişisel verilerimin işlenmesini onaylıyorum.
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary w-100 py-3 fw-bold fs-5"
+              >
+                <i class="bi bi-check-circle-fill me-2"></i>Randevu Oluştur
+              </button>
             </div>
           </div>
         </div>
